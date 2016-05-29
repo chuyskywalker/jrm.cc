@@ -1,7 +1,7 @@
 {
     "console": {
-        "@expanded": true,
-        "@height": 464.20001220703125,
+        "@expanded": false,
+        "@height": 294.20001220703125,
         "@maximized": "false",
         "json()": {
             "meta": {
@@ -16,8 +16,7 @@
                     "name": "tab1",
                     "path": "",
                     "className": [
-                        "tab1",
-                        "focus"
+                        "tab1"
                     ],
                     "document": {
                         "changed": false,
@@ -25,13 +24,13 @@
                             "timestamp": 1464497010307
                         },
                         "filter": true,
-                        "title": "root@f5fa71377c89:/app/jrmcc - \"f5fa71377c89\"",
-                        "tooltip": "root@f5fa71377c89:/app/jrmcc - \"f5fa71377c89\"",
+                        "title": "bash - \"root@8fded4e0be6c:/app/jrmcc\"",
+                        "tooltip": "bash - \"root@8fded4e0be6c:/app/jrmcc\"",
                         "terminal": {
                             "id": "devel_91",
                             "cwd": "",
-                            "width": 967,
-                            "height": 438
+                            "width": 0,
+                            "height": 0
                         }
                     },
                     "editorType": "terminal",
@@ -57,21 +56,22 @@
     },
     "ext": {
         "counters": {
-            "@ace": 3,
-            "@acestatus": 2,
+            "@ace": 1,
+            "@ace.repl": 1,
+            "@acestatus": 1,
             "@datagrid": 1,
             "@divider": 4,
-            "@document": 26,
-            "@form": 5,
+            "@document": 11,
+            "@form": 6,
             "@immediate": 1,
             "@menu": 8,
             "@menuitem": 19,
-            "@pane": 2,
+            "@pane": 3,
             "@preferences": 1,
-            "@session": 26,
-            "@tab": 19,
+            "@session": 11,
+            "@tab": 10,
             "@tree": 2,
-            "@undoManager": 26,
+            "@undoManager": 11,
             "@welcome": 1
         }
     },
@@ -90,13 +90,14 @@
     },
     "panecycle": {
         "json()": [
-            "tab1",
-            "tab18"
+            "tab5",
+            "tab3",
+            "tab1"
         ]
     },
     "panels": {
         "@active-left": "tree",
-        "@width-left": 346,
+        "@width-left": 328,
         "commands.panel": {
             "@enabled": "true",
             "@name": "commands.panel"
@@ -137,7 +138,6 @@
                 "/themes/cocoa",
                 "/static/img",
                 "/themes/cocoa/layouts",
-                "/content/New Folder",
                 "/themes/cocoa/layouts/_default",
                 "/themes/cocoa/static",
                 "/themes/cocoa/exampleSite",
@@ -161,44 +161,109 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/content/blog/mysql-big-encrypted-data-moves.html.md",
-            "meta": {
-                "accessList": [
-                    "tab18"
-                ]
-            },
-            "name": "pane0",
+            "focus": "tab5",
             "nodes": [
                 {
-                    "type": "tab",
-                    "name": "tab18",
-                    "path": "/content/blog/mysql-big-encrypted-data-moves.html.md",
-                    "className": [
-                        "tab18",
-                        "focus"
-                    ],
-                    "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1464497929432
+                    "type": "pane",
+                    "name": "pane0",
+                    "nodes": [
+                        {
+                            "type": "tab",
+                            "name": "tab2",
+                            "path": "/content/blog/php-aes-openssl.html.md",
+                            "className": [
+                                "tab2"
+                            ],
+                            "document": {
+                                "changed": false,
+                                "meta": {
+                                    "timestamp": 1464502386616
+                                },
+                                "filter": true,
+                                "title": "php-aes-openssl.html.md",
+                                "tooltip": "/content/blog/php-aes-openssl.html.md",
+                                "ace": {}
+                            },
+                            "editorType": "ace",
+                            "active": false
                         },
-                        "filter": true,
-                        "title": "mysql-big-encrypted-data-moves.html.md",
-                        "tooltip": "/content/blog/mysql-big-encrypted-data-moves.html.md",
-                        "ace": {}
-                    },
-                    "editorType": "ace",
-                    "active": true
+                        {
+                            "type": "tab",
+                            "name": "tab3",
+                            "path": "/content/blog/battlestation.md",
+                            "className": [
+                                "tab3"
+                            ],
+                            "document": {
+                                "changed": false,
+                                "meta": {
+                                    "timestamp": 1464502523456
+                                },
+                                "filter": true,
+                                "title": "battlestation.md",
+                                "tooltip": "/content/blog/battlestation.md",
+                                "ace": {}
+                            },
+                            "editorType": "ace",
+                            "active": true
+                        }
+                    ],
+                    "skin": "editor_tab",
+                    "skinset": "default",
+                    "meta": {
+                        "accessList": [
+                            "tab2",
+                            "tab3"
+                        ]
+                    }
+                },
+                {
+                    "type": "pane",
+                    "name": "pane2",
+                    "nodes": [
+                        {
+                            "type": "tab",
+                            "name": "tab5",
+                            "path": "",
+                            "className": [
+                                "tab5",
+                                "focus"
+                            ],
+                            "document": {
+                                "changed": false,
+                                "meta": {
+                                    "timestamp": 1464503212934
+                                },
+                                "filter": true,
+                                "title": "root@8fded4e0be6c:/app - \"8fded4e0be6c\"",
+                                "tooltip": "root@8fded4e0be6c:/app - \"8fded4e0be6c\"",
+                                "terminal": {
+                                    "id": "devel_777",
+                                    "cwd": "",
+                                    "width": 1173,
+                                    "height": 258
+                                }
+                            },
+                            "editorType": "terminal",
+                            "active": true
+                        }
+                    ],
+                    "height": "37.87666829427083%",
+                    "skin": "editor_tab",
+                    "skinset": "default",
+                    "meta": {
+                        "accessList": [
+                            "tab5"
+                        ]
+                    }
                 }
             ],
-            "skin": "editor_tab",
-            "skinset": "default",
-            "type": "pane"
+            "type": "vsplitbox"
         }
     },
     "tree_selection": {
         "json()": [
-            "/content/blog/mysql-big-encrypted-data-moves.html.md"
+            "/content/blog/battlestation.md"
         ]
     }
 }

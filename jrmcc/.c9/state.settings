@@ -61,17 +61,17 @@
             "@acestatus": 1,
             "@datagrid": 1,
             "@divider": 4,
-            "@document": 11,
+            "@document": 4,
             "@form": 6,
             "@immediate": 1,
-            "@menu": 8,
-            "@menuitem": 19,
+            "@menu": 5,
+            "@menuitem": 13,
             "@pane": 3,
             "@preferences": 1,
-            "@session": 11,
-            "@tab": 10,
+            "@session": 4,
+            "@tab": 1,
             "@tree": 2,
-            "@undoManager": 11,
+            "@undoManager": 4,
             "@welcome": 1
         }
     },
@@ -90,9 +90,8 @@
     },
     "panecycle": {
         "json()": [
-            "tab5",
             "tab3",
-            "tab1"
+            "tab5"
         ]
     },
     "panels": {
@@ -131,20 +130,11 @@
                 "/",
                 "/content",
                 "/content/blog",
-                "/layouts",
                 "/public",
                 "/static",
                 "/themes",
                 "/themes/cocoa",
                 "/static/img",
-                "/themes/cocoa/layouts",
-                "/themes/cocoa/layouts/_default",
-                "/themes/cocoa/static",
-                "/themes/cocoa/exampleSite",
-                "/themes/cocoa/exampleSite/layouts",
-                "/themes/cocoa/layouts/fixed",
-                "/themes/cocoa/layouts/partials",
-                "/themes/cocoa/layouts/blog",
                 "/content/fixed"
             ]
         }
@@ -161,7 +151,7 @@
     },
     "tabs": {
         "json()": {
-            "focus": "tab5",
+            "focus": "tab0",
             "nodes": [
                 {
                     "type": "pane",
@@ -175,14 +165,36 @@
                                 "tab2"
                             ],
                             "document": {
-                                "changed": false,
-                                "meta": {
-                                    "timestamp": 1464502386616
-                                },
                                 "filter": true,
                                 "title": "php-aes-openssl.html.md",
                                 "tooltip": "/content/blog/php-aes-openssl.html.md",
-                                "ace": {}
+                                "ace": {
+                                    "folds": [],
+                                    "scrolltop": 60,
+                                    "scrollleft": 0,
+                                    "selection": {
+                                        "start": {
+                                            "row": 55,
+                                            "column": 7
+                                        },
+                                        "end": {
+                                            "row": 55,
+                                            "column": 7
+                                        },
+                                        "isBackwards": false
+                                    },
+                                    "options": {
+                                        "guessTabSize": true,
+                                        "useWrapMode": false,
+                                        "wrapToView": true
+                                    },
+                                    "firstLineState": 0
+                                },
+                                "hash": "e08ba32aaf3839dfe158cb1806b688d5bc8a75a7",
+                                "meta": {
+                                    "timestamp": 1465017598364
+                                },
+                                "changed": false
                             },
                             "editorType": "ace",
                             "active": false
@@ -197,7 +209,7 @@
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1464502523456
+                                    "timestamp": 1465017598364
                                 },
                                 "filter": true,
                                 "title": "battlestation.md",
@@ -226,8 +238,7 @@
                             "name": "tab5",
                             "path": "",
                             "className": [
-                                "tab5",
-                                "focus"
+                                "tab5"
                             ],
                             "document": {
                                 "changed": false,
@@ -240,11 +251,32 @@
                                 "terminal": {
                                     "id": "devel_777",
                                     "cwd": "",
-                                    "width": 1173,
-                                    "height": 258
+                                    "width": 0,
+                                    "height": 0
                                 }
                             },
                             "editorType": "terminal",
+                            "active": false
+                        },
+                        {
+                            "type": "tab",
+                            "name": "tab0",
+                            "path": "",
+                            "className": [
+                                "tab0",
+                                "focus"
+                            ],
+                            "document": {
+                                "changed": false,
+                                "meta": {
+                                    "welcome": true,
+                                    "timestamp": 1465020741558
+                                },
+                                "filter": true,
+                                "title": "Welcome",
+                                "welcome": {}
+                            },
+                            "editorType": "welcome",
                             "active": true
                         }
                     ],
@@ -253,6 +285,7 @@
                     "skinset": "default",
                     "meta": {
                         "accessList": [
+                            "tab0",
                             "tab5"
                         ]
                     }

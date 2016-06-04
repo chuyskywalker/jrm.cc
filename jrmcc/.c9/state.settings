@@ -150,7 +150,7 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/content/blog/php-aes-openssl.html.md",
+            "focus": "/content/blog/php-aes-openssl.md",
             "meta": {
                 "accessList": [
                     "tab2"
@@ -161,7 +161,7 @@
                 {
                     "type": "tab",
                     "name": "tab2",
-                    "path": "/content/blog/php-aes-openssl.html.md",
+                    "path": "/content/blog/php-aes-openssl.md",
                     "className": [
                         "tab2",
                         "focus"
@@ -172,8 +172,8 @@
                             "timestamp": 1465017598364
                         },
                         "filter": true,
-                        "title": "php-aes-openssl.html.md",
-                        "tooltip": "/content/blog/php-aes-openssl.html.md",
+                        "title": "php-aes-openssl.md",
+                        "tooltip": "/content/blog/php-aes-openssl.md",
                         "ace": {}
                     },
                     "editorType": "ace",
@@ -187,7 +187,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/content/blog/creditcards.html.md"
+            "/content/blog/blueprint-framework.html.md"
         ]
     }
 }

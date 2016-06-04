@@ -1,8 +1,8 @@
-baseurl = "http://192.168.1.51:8080/"
 title = "JRM.CC"
+#relativeURLs = true
+#canonifyURLs = false
+theme = "cocoa"
 
-
-canonifyurls = true
 contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"
@@ -14,8 +14,8 @@ pygmentsuseclasses = true
 pluralizelisttitles = false
 
 [permalinks]
-fixed = ":title/"
-blog = "blog/:slug/"
+fixed = "/:title/"
+blog = "/blog/:slug/"
 
 [params]
 Author = "Jeff Minard"

@@ -1,4 +1,37 @@
-{{ partial "footer_scripts" . }}
+
+    <footer>
+        <div class="slate">
+            <div class="five columns">
+                <h5>Recent Posts</h5>
+                <ul>
+                {{ range first 3 .Site.Pages }}
+                    {{ if eq .Section "blog" }}
+                        <li>
+                            {{ .Date.Format .Site.Params.DateForm }}<br/>
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+                </ul>
+            </div>
+            <div class="three columns">
+                <h5>Catch me elsewhere:</h5>
+                <a href="https://github.com/chuyskywalker"><button class="sb github"><i class="icon-github"></i></button></a>
+                <a href="mailto:contactbutton@jrm.cc"><button class="sb envelope"><i class="icon-envelope"></i></button></a>
+                <a href="https://www.facebook.com/jeff.minard"><button class="sb facebook"><i class="icon-facebook"></i></button></a>
+                <a href="https://www.linkedin.com/in/jeffminard"><button class="sb linkedin"><i class="icon-linkedin"></i></button></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    var
+        btn = document.getElementById('menubutton'),
+        nav = document.getElementById('sitenav');
+    btn.onclick = function(){
+        nav.style.display = nav.style.display == 'block' ? 'none' : 'block';
+    };
+    </script>
 
 </body>
 </html>

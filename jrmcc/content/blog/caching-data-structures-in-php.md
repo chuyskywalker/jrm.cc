@@ -11,20 +11,20 @@ from my battlefield 2 stats website I have several very large arrays that
 describe every award you can get, which look something like this, but repeated
 hundrededs of times:
 
-```
+```php
 '9' => array(
-    'short'     => 'MgySgt', 
+    'short'     => 'MgySgt',
     'long'      => 'Master Gunnery Sergeant',
     'unlock'    => true,
-    'notes'     => '', 
+    'notes'     => '',
     'thisrank'  => '9',
     'nextrank'  => '12',
     'requires'  => array(
         'awards'    => '',
         'rank'      => '7',
-        'score'     => '50000', 
+        'score'     => '50000',
         'round'     => ''
-        ) 
+        )
     ),
 ```
 
@@ -32,35 +32,35 @@ So the question arises, how do you store this data, load it, and use it?
 
 ## First Step: Research
 
-Of course, I found a page on [StackOverflow about php storage](http://stackoverflow.com/questions/804045/preferred-method-to-store-php-arrays-json-encode-vs-serialize). 
-Perusing the article, you'll see most people break down the caching theory 
+Of course, I found a page on [StackOverflow about php storage](http://stackoverflow.com/questions/804045/preferred-method-to-store-php-arrays-json-encode-vs-serialize).
+Perusing the article, you'll see most people break down the caching theory
 into three options:
 
  1. json_encode the data into a file, load it, json_decode
  2. serialize the data into a file, load it, unserialize
  3. var_export the data into a file, require() it
 
-One responder (who should have more votes, if it was up to me) went pretty far 
+One responder (who should have more votes, if it was up to me) went pretty far
 and did a serious amount of [benchmarking for the php array storage issue](http://techblog.procurios.nl/k/618/news/view/34972/14863/Cache-a-large-array-JSON-serialize-or-var_export.html).
 
-I won't go into a lot of details on each method as the linked articles cover 
-them each pretty well, but I want to open two other options and redo the 
-benchmarks because something smelled fishy when JSON has been coming out 
+I won't go into a lot of details on each method as the linked articles cover
+them each pretty well, but I want to open two other options and redo the
+benchmarks because something smelled fishy when JSON has been coming out
 the winner...
 
 ## The Purported Winner, JSON
 
-JSON certainly has some advantages: the cached file sizes are smaller 
-(especially when you saving a numericly indexed array), it is usually faster 
-to write, and if you have a highly JS oriented site architecture being able 
+JSON certainly has some advantages: the cached file sizes are smaller
+(especially when you saving a numericly indexed array), it is usually faster
+to write, and if you have a highly JS oriented site architecture being able
 to make HTTP requests for your JSON data files can be quite useful.
 
-What irked me is that, for my purposes, none of those things really truly 
-matter. File size isn't a real concern because my largest cached file weighs 
-in at about 50KB. I won't be distributing the data to JS applications, and 
+What irked me is that, for my purposes, none of those things really truly
+matter. File size isn't a real concern because my largest cached file weighs
+in at about 50KB. I won't be distributing the data to JS applications, and
 writes only happens once.
 
-So, what does matter? *Read speed.* And with that in mind, what I found out is 
+So, what does matter? *Read speed.* And with that in mind, what I found out is
 that JSON can't hold a candle to the other two methods.
 
 ## Cons of var_export
@@ -69,35 +69,35 @@ I'd first like to rebut the cons list that var_export was given on Procurious.nl
 
 > 1. Needs PHP wrapper code.
 > 2. Can not encode Objects of classes missing the __set_state method.
-> 2. When using an opcode cache your cache file will be stored in the opcode 
->    cache. If you do not need a persistant cache this is useless, most opcode 
->    caches support storing values in the shared memory. If you don't mind 
->    storing the cache in memory, use the shared memory without writing the 
+> 2. When using an opcode cache your cache file will be stored in the opcode
+>    cache. If you do not need a persistant cache this is useless, most opcode
+>    caches support storing values in the shared memory. If you don't mind
+>    storing the cache in memory, use the shared memory without writing the
 >    cache to disk first.
-> 4. Another disadvantage is that your stored file has to be valid PHP.  
->    If it contains a parse error (which could happen when your script crashes  
+> 4. Another disadvantage is that your stored file has to be valid PHP.
+>    If it contains a parse error (which could happen when your script crashes
 >    while writing the cache) your application will not work anymore.
 
 
- 1. Wrapper code exists for your other caching methods as well, it's just placed 
+ 1. Wrapper code exists for your other caching methods as well, it's just placed
     inside the loading function instead of in the cached file itself.
- 2. If you encoding objects created with classes, JSON is going to fail worse.  
-    The more likely scenario, however, is that you are just using “dumb” stdClass  
-    objects, in which case it is super easy to overcome the  
-    `stdClass::__set_state()` blunder. `str_replace('stdClass::__set_state(', '(object)', var_export($data,true))` 
+ 2. If you encoding objects created with classes, JSON is going to fail worse.
+    The more likely scenario, however, is that you are just using “dumb” stdClass
+    objects, in which case it is super easy to overcome the
+    `stdClass::__set_state()` blunder. `str_replace('stdClass::__set_state(', '(object)', var_export($data,true))`
      done and fixed.
- 3. The point of pushing the cache data into a file is for longevity. Your APC  
-    cache will not survive a server restart, a cached file will. Additionally,  
+ 3. The point of pushing the cache data into a file is for longevity. Your APC
+    cache will not survive a server restart, a cached file will. Additionally,
     I have too much data to reliably cache in memory[^1]; using the opcache
     provides the built in “most used gets kept around” optimization.
- 4. This point could be made about <em>ANY</em> of these methods. A broken  
+ 4. This point could be made about <em>ANY</em> of these methods. A broken
     serialized file or cut-in-half JSON object is just as likely to cause errors.
 
 ## Don't Discount The Opcode Cache
 
-I find it odd that the opcode cache was so readily dismissed; it's a surefire 
-way to speed up ANY of these operations. To that point, let's introduce two 
-other caching methods that an that can make unserialize and json_decode even 
+I find it odd that the opcode cache was so readily dismissed; it's a surefire
+way to speed up ANY of these operations. To that point, let's introduce two
+other caching methods that an that can make unserialize and json_decode even
 faster. How? Just wrap the data up inside a PHP file!
 
 ```php
@@ -105,9 +105,9 @@ faster. How? Just wrap the data up inside a PHP file!
 <?php return json_decode('{"your": "json", "goes": "here"}');
 ```
 
-The same treatement can be applied to unserialize. By introducing this boiler 
-plate routine into your serialized/json_encode'ed data you can take advantage 
-of the opcode cache. When you'll see later is that even if you decide to go 
+The same treatement can be applied to unserialize. By introducing this boiler
+plate routine into your serialized/json_encode'ed data you can take advantage
+of the opcode cache. When you'll see later is that even if you decide to go
 with JSON, doing this will lead to a significant speed up.
 
 ## Test Script

@@ -1,12 +1,9 @@
 {{ partial "header.html" . }}
-<section class="main">
-    <div class="container">
-        <div class="content">
-            {{ partial "page-heading.html" . }}
-            <div class="markdown">
-                {{ .Content }}
-            </div>
-        </div>
+<section>
+    <div class="eight columns">
+        <h1 class="post_title">{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}</h1>
+        {{ .Content }}
     </div>
+    <br class="clear" />
 </section>
 {{ partial "footer.html" . }}

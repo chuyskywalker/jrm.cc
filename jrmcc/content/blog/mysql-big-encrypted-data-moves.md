@@ -26,13 +26,13 @@ while they can be fast to load, they are *not* the fastest way to load data.
 Instead, you should use the `SELECT INTO OUTFILE` command. It will look
 something like this:
 
-{{< highlight sql >}}
+```sql
 SELECT
 userId, username, hashedPassword, secretData
 INTO OUTFILE '/path/to/users.csv'
 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n'
 FROM schema.users;
-{{< /highlight >}}
+```
 
 This will create a standard 'ol CSV file. However, there's a problem here. That
 `secretData` column is a binary field with encrypted (or any kind of binary)
@@ -44,13 +44,13 @@ plaintext.
 So, how do you export this data in a sane CSV? Turns out it's pretty easy,
 just `hex()` the binary values:
 
-{{< highlight sql >}}
+```sql
 SELECT
 userId, username, hashedPassword, hex(secretData)
 INTO OUTFILE '/path/to/users.csv'
 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n'
 FROM schema.users;
-{{< /highlight >}}
+```
 
 This will convert the binary data into its hexidecimal representation which,
 in turn, creates a perfectly acceptable CSV file.
@@ -72,9 +72,9 @@ multi-thread it, but it's really not worth it.)
 So, in order to read the file, parse it, and dump each record into the
 appropriate CSV file we turn to the incomprehensible `awk` linux tool:
 
-{{< highlight bash >}}
+```bash
 awk -F, '{x=sprintf("%.4d", $1%1024); print > x".csv" }'
-{{< /highlight >}}
+```
 
 In short, what this does is pull the first column of data (split by commas),
 modulo against 1024, set that to the variable `x` and then appends the whole
@@ -85,9 +85,9 @@ Now, `awk` will happily run this until it finishes, but as it can take a very
 long time to run, I highly recommend you install the `pv` utility and run the
 command like this to get visual progress bar and ETA:
 
-{{< highlight bash >}}
+```bash
 pv /path/to/users.csv | awk -F, '{x=sprintf("%.4d", $1%1024); print > x".csv" }'
-{{< /highlight >}}
+```
 
 Finally, run these commands in a `screen` session so if you lose your SSH
 connection all is not lost.
@@ -99,13 +99,13 @@ that `hex()`d data isn't that you actually want in the column. Fortuneately,
 `LOAD DATA INFILE` has a trick which lets us get the data imported in the
 correct format:
 
-{{< highlight sql >}}
+```sql
 LOAD DATA LOCAL INFILE '/path/to/shard.csv'
 REPLACE INTO TABLE schema.users
 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n'
 userId, username, hashedPassword, @secretData
 SET secretData = unhex(@secretData);
-{{< /highlight >}}
+```
 
 This is an interesting extra little feature of `LOAD DATA` wherein you can
 specify each portion of the CSV to go into a column or into a variable. You

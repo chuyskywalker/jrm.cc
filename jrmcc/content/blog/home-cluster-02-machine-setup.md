@@ -46,7 +46,7 @@ What that does is setup the router to tell machines that they can PXE boot from 
 
 Now just restart dnsmasq to get it up and working:
 
-```
+```bash
 # Weird syntax, but it works
 service restart_dnsmasq
 ```
@@ -98,7 +98,7 @@ I only use two boot options at this point: install ubunut or run memtest. Being 
 
 To setup the ubuntu source, you'll need to download their ISO and extract it to `/tmp/mnt/sdc1/tftp/ubuntu/16.04/`. Once done, you need to steal a few files from the ISO and place them in the tftp root:
 
-```
+```bash
 cp /tmp/mnt/sdc1/tftp/ubuntu/16.04/install/netboot/ubuntu-installer/amd64/pxelinux.0 /tmp/mnt/sdc1/tftp
 cp /tmp/mnt/sdc1/tftp/ubuntu/16.04/isolinux/chain.c32 /tmp/mnt/sdc1/tftp
 cp /tmp/mnt/sdc1/tftp/ubuntu/16.04/isolinux/ldlinux.c32 /tmp/mnt/sdc1/tftp
@@ -109,7 +109,7 @@ cp /tmp/mnt/sdc1/tftp/ubuntu/16.04/isolinux/vesamenu.c32 /tmp/mnt/sdc1/tftp
 
 And if you want memtest, grab this:
 
-```
+```bash
 wget http://www.memtest.org/download/5.01/memtest86+-5.01.bin.gz
 gunzip memtest86\+-5.01.bin.gz
 mkdir /tmp/mnt/sdc1/tftp/memtest/
@@ -133,7 +133,7 @@ label Ubuntu-16.04
 
 The preseed.cfg is what the installer will attempt to fetch and use to auto install the system. My preseed looks like this -- lots of comments explaining what I picked and why are embedded.
 
-```
+```text
 # preseed.cfg
 
 # Language setting -- I'm in the us
@@ -222,7 +222,7 @@ d-i finish-install/reboot_in_progress note
 
 That file all put together will get the system installer to completely finish an ubuntu install. You would, however, need the late.sh script. A slightly redacted version of mine looks like this:
 
-```
+```bash
 #!/bin/bash
 
 # Update to proper sources -- as noted in preseed, the sources setup for

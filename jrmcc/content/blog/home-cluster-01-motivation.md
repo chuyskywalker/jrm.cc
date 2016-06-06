@@ -3,17 +3,19 @@ title: "Home Cluster (Part I): Motivations"
 date: 2016-06-05
 ---
 
+In this series, I'm going to document and explore my journey through my last hosting and development trials for 2015-2016.
+
 ## AWS -- Too Much
 
-Mid 2015, I undertook moving all my website hosting into my house. Setup a basic server, got a decent ISP connect, added a CDN in front of my sites, and stopped paying AWS > $150/month.
+At the beginning on 2015, I had been hosting with AWS for a year or so for all my websites. This, however, was running a bill of about $150/month. Too much. So, mid 2015, I started moving all my websites into my house. I setup a basic server, got a decent ISP connection, added a CDN in front of my sites, and stopped paying AWS.
 
-However, back then I had moved it to what was, previously, my media server machine. It was acceptable for video playback _(i3 core (4t), 8gb of ram, and some spinning disks)_ but was clearly was struggling at times with VMWare and several virtual machines sitting on top of it.
+Overall this worked -- however, I had moved to what was, previously, my media server machine. While acceptable for video playback _(i3 core (4t), 8gb of ram, and some spinning disks)_, the server was clearly struggling at times with VMWare and several virtual machines sitting on top of it.
 
-I eventually got my hands on some obscenely powerful datacenter-grade hardware, set it all up -- and then got my first power bill. Paying $70/month to run that beastly 2u server just wasn't going to fly.
+I eventually got my hands on some obscenely powerful datacenter-grade hardware, set it all up -- and then got my first power bill. Paying $70/month to run that beastly 2u server just wasn't going to fly. In both situations, I was operating under a single point of failure -- I wanted redundancy and low power.
 
 ## Mini Cluster
 
-To work around expensive power costs, and to scratch my own continued learning education, I decided to have a go at creating a mini-cluster. I started putting together a plan for a small cluster of cheap machines, low power, low noise, capable enough to run my websites, *and* I wanted some redundancy.
+To work around expensive power costs, and to scratch my own continued-learning-education itch, I decided to have a go at creating a mini-cluster. I started putting together a plan for a small cluster of machines: cheap, low power, low noise, and capable enough to run my websites. The reason I was going for a cluster (3+ machines) was to achieve a level of redundancy -- meaning I wanted to be able to turn off (on purpose or accidentally) a machine and not have any websites go offline without manual intervention to get them back.
 
 ## First Forray, Pi(e) Time!
 

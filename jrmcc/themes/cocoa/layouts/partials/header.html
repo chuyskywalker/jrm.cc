@@ -1,64 +1,39 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="en">
 
-{{ partial "head.html" . }}
+<head>
+    <meta charset="utf-8">
+    <title>
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ if eq $url "/" }}
+    {{ .Site.Title }}
+{{ else }}
+    {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+{{ end }}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/css/combined.css?{{ .Now.Unix }}">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
 
-<body lang="{{ .Site.Params.Lang }}">
+<body>
 
-<section class="header"> 
-    <div class="container">
-        <div class="content">
-            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
-            <nav>
-                <ul>
-                    <a href="/blog/"><li>Blog</li></a>
-                    <a href="/about/"><li>About</li></a>
-                    <a href="/resume/"><li>Resume</li></a>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</section>
-
-<section class="icons">
-    <div class="container">
-        <div class="content">
-
-        {{ if .Site.Params.GitHub }}
-            <a href="{{ .Site.Params.GitHub }}" target="_blank">
-                <i class="icon ion-social-github"></i>
-            </a>
-        {{ end }}
-        
-        {{ if .Site.Params.Twitter }}
-            <a href="{{ .Site.Params.Twitter }}" target="_blank">
-                <i class="icon ion-social-twitter"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.LinkedIn }}
-            <a href="{{ .Site.Params.LinkedIn }}" target="_blank">
-                <i class="icon ion-social-linkedin"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.Facebook }}
-            <a href="{{ .Site.Params.Facebook }}" target="_blank">
-                <i class="icon ion-social-facebook larger"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.SoundCloud }}
-            <a href="{{ .Site.Params.SoundCloud }}" target="_blank">
-                <i class="icon ion-ios-musical-notes larger"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.Email }}
-            <a href="mailto:{{ .Site.Params.Email }}">
-                <i class="icon ion-ios-email larger"></i>
-            </a>
-        {{ end }}
-        </div>
-    </div>
-</section>
+    <header>
+        <h1 class="logo"><a href="/"><span>Jeff Minard</span></a></h1>
+        <div class="menubutton" id="menubutton"><i class="icon-menu"></i></div>
+        <nav id="sitenav">
+            <ul>
+                {{ range .Site.Pages }}
+                    {{ if eq .Section "fixed" }}
+                        <li>
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </nav>
+        <br class="clear" />
+    </header>

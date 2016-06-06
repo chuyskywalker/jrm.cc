@@ -1,17 +1,22 @@
 {{ partial "header.html" . }}
-<section class="main">
-    <div class="container">
-        <div class="content">
-            <div class="page-heading">Blog</div>
-            <ul>
+
+<section>
+    <div class="eight columns">
+        <h1 class="post_title">Hello.</h1>
+        <p>Read <a href="/about">about me</a>, check out <a href="/resume">my resume</a>, or look below for things I've written:</p>
+
+        <ul>
             {{ range .Data.Pages.ByPublishDate }}
                 {{ if eq .Section "blog" }}
-                    {{ partial "li.html" . }}
+                    <li class="post-item">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a> <small>({{ .Date.Format .Site.Params.DateForm }})</small>
+                    </li>
                 {{ end }}
             {{ end }}
-            </ul>
-        </div>
-    </div>
-</section>
-{{ partial "footer.html" . }}
+        </ul>
 
+    </div>
+    <br class="clear" />
+</section>
+
+{{ partial "footer.html" . }}

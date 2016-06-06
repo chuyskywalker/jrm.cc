@@ -3,6 +3,8 @@ title = "JRM.CC"
 #canonifyURLs = false
 theme = "cocoa"
 
+PygmentsCodeFences = true
+
 contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"

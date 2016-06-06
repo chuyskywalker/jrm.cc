@@ -53,7 +53,7 @@ Got a lot of data? I sure do, and the faster I can process the droves of encrypt
 
 Here's a result table from my machine (i7 windows host, 4 core CentOS 6.4 VM through PHP 5.5.6):
 
-```bash
+```text
 # php examples/compare.php
 Results:
 +---------+--------+----------+-------------+--------------+

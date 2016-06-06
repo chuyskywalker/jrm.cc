@@ -1,6 +1,6 @@
 FROM chuyskywalker/centos7-dumbinit-supervisor
 
-RUN yum install -y epel-release iproute \
+RUN yum install -y epel-release \
  && yum install -y python-pip wget unzip \
 \
  && pip install Pygments \
@@ -17,9 +17,6 @@ RUN yum install -y epel-release iproute \
 \
  && yum -y history undo last \
  && yum -y remove epel-release \
- && yum clean all \
  && rm -rf /var/cache/yum
 
 COPY apps.ini /config/supervisor/apps.ini
-COPY myip.sh  /config/init/myip.sh
-COPY consul.json /config/consul.json

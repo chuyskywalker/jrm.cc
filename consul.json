@@ -1,0 +1,15 @@
+{
+  "data_dir": "/tmp/consul",
+  "retry_join": [ "192.168.1.51", "192.168.1.52", "192.168.1.53" ],
+  "services": [{
+    "name": "jrmcc-dev"
+  }],
+  "checks": [{
+    "id": "jrmcc-dev",
+    "name": "HTTP on port 80",
+    "http": "http://localhost:80/",
+    "interval": "10s",
+    "timeout": "1s",
+    "service_id": "jrmcc-dev"
+  }]
+}

@@ -17,6 +17,8 @@ rm -rf ${APP_DIR}
 docker run -ti --rm -v `pwd`:/app chuyskywalker/hugo hugo --source="/app/jrmcc" --destination="/app/deploy/output" --baseUrl="http://jrm.cc/"
 
 # Minify it all
+#  -- Ofline till the <pre><code>whitespace muckery gets fixed up later:
+#     https://github.com/tdewolff/minify/issues/82
 #docker run -ti --rm -v `pwd`/deploy/output:/src chuyskywalker/minify minify --verbose --recursive --html-keep-whitespace /src
 
 # Pre-compress gzip everything

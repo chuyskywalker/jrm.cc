@@ -1,6 +1,6 @@
 ---
 title: "Home Cluster (Part II): Machine Setup, PiXiEs!"
-date: 2016-06-06
+date: 2016-06-01
 ---
 
 With my new cluster hardware in place, on thing I really did not want to do was setup all three machines by hand with install usb sticks, etc. Especially since I had the foresight to realize that I'd probably had to re-image these machines a few times in the future.
@@ -9,13 +9,13 @@ With my new cluster hardware in place, on thing I really did not want to do was 
 
 I am *most* familiar with Centos 6/7 (any RHEL based system, really). Normally I would have gone with that OS, *but* I planned on relying very heavily on Docker for these servers. Now, while Docker is supported in RHEL distributions, it's a bit of a second-class citizen. Ubuntu has all the best features, is most stable, and least PITA to work with when you're dealing with docker. So I went with that.
 
-## Automated Builds
+## Bootstrapping Bare Metal Machines
 
 Also all network cards for the last _forever_ support PXE boot mode. Good google that for way more details, but it boils down to the idea that the network card can grab an IP address from your DHCP server and _also_ get instructions on where to fetch a boot image from. It will grab that boot image and start your system. Typically you'll use this to show a menu of options.
 
 ## RT-N66U Router and PXE Boot
 
-I have the very nice RT-N66U router. Since it's a mini-linux like box, it's using `dnsmasq` interally. `dnsmasq` is nicely powerful and can server PXE info _and_ serve as the TFTP server that the remote computer will download images from. You will need a USB thumb drive to store large ISO's for the router.
+I have the very nice RT-N66U router. Since it's a mini-linux like box, it's using `dnsmasq` interally. `dnsmasq` is a powerful dns server which can serve PXE info _and_ act as the TFTP server for remote computers. You will need a USB thumb drive to store large ISO's for the router -- just pop one into the back and format it.
 
 ### Turn on JFFS and SSHD
 

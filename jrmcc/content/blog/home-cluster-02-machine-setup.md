@@ -29,13 +29,13 @@ Once done, you can ssh to the router and login using the admin credentials.
 
 We need to edit the router to load extra params into dnsmasq. SSH in, create the right directory, and setup your extra configs:
 
-```
+```bash
 mkdir -p /jffs/configs/
 ```
 
 If `/jffs/configs/dnsmasq.conf.add` file exists, add to it, otherwise put in:
 
-```
+```text
 dhcp-boot=pxelinux.0,,192.168.1.1
 enable-tftp
 tftp-root=/tmp/mnt/sdc1/tftp
@@ -55,7 +55,7 @@ service restart_dnsmasq
 
 First you're going to need to define what your `Boot Menu` will look like, this is mine:
 
-```
+```text
 # /tmp/mnt/sdc1/tftp/pxelinux.cfg/default
 # The Boot Menu!
 
@@ -124,7 +124,7 @@ At this point, a machine configured for PXE boot (see your motherboard bios opti
 
 If you take a look at the boot menu options, you see
 
-```
+```text
 label Ubuntu-16.04
     menu label ^0 Ubuntu 16.04
     kernel ubuntu/16.04/install/netboot/ubuntu-installer/amd64/linux

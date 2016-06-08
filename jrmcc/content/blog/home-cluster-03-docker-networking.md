@@ -51,7 +51,7 @@ First, I setup my router to claim the ip address `192.168.1.1` and subnet `255.2
 
 Once the network space was setup, I started in on each of my thre Ubuntu 16.04 servers by adding a new bridged adapter to `/etc/network/interfaces`
 
-```
+```text
 auto br0
 iface br0 inet static
     address 192.168.1.51

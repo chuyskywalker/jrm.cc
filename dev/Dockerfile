@@ -14,6 +14,6 @@ RUN wget https://releases.hashicorp.com/consul/0.6.4/consul_0.6.4_linux_amd64.zi
 RUN unzip consul_0.6.4_linux_amd64.zip
 RUN mv consul /usr/bin/consul
 
-COPY apps.ini /config/supervisor/apps.ini
-COPY myip.sh  /config/init/myip.sh
+COPY apps.ini    /config/supervisor/apps.ini
+COPY myip.sh     /config/init/myip.sh
 COPY consul.json /config/consul.json

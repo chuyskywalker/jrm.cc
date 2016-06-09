@@ -7,8 +7,8 @@
   }],
   "checks": [{
     "id": "jrmcc-dev",
-    "name": "HTTP on port 80",
-    "http": "http://localhost:80/",
+    "name": "HTTP on port 81",
+    "http": "http://localhost:81/",
     "interval": "10s",
     "timeout": "1s",
     "service_id": "jrmcc-dev"

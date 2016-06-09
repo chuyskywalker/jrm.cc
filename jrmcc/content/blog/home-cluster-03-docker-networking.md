@@ -39,7 +39,7 @@ I don't know if there are any major/minor performance concerns with the overlay 
 
 ### Routable IPs
 
-Why not have Docker create containers with real, in your network, IP addresses? This is the setup I really went for, and it solves a plethora of problems. First, you'll have containers you can reach from anywhere in your network just like any host can ping any other host. Secondly, you'll never have a port mapping conflict -- just doesn't exist. Third, you can run secondary services in your container, ala consul, without any crazy hacky work arounds.
+Why not have Docker create containers with real, in-your-network, IP addresses? This is the setup I went for, and it solves a plethora of problems. First, it allows any machine or container, to reach any container. Secondly, you'll never have a port mapping conflict. Third, you can run secondary services in your container, ala consul, without any crazy hacky work arounds.
 
 Getting Docker to do this, however, was a bit of a headache. Here's how I go about this on Ubuntu 16.04 hosts...
 
@@ -123,4 +123,4 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 Setup as such I no longer have to contend with weird mapping scenarios, port conflicts, or inside/outside routing layers. Containers, from a network perspective, look and act like any other host on the network. Integrating with almost any application becomes a breeze and simply getting to basic contaienrs is supremely easy now.
 
-Overall, I _*highly*_ recommend this setup. 
+Overall, I _*highly*_ recommend this setup; containers with real IP addresses is simple in execution, highly functional, and doesn't add any significant overhead making it a wonderful runstate for containers.

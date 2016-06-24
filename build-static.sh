@@ -50,6 +50,8 @@ done
 
 # Build container
 cd deploy
-docker build -t jrmcc .
+docker build -t chuyskywalker/jrmcc .
+
+# docker push chuyskywalker/jrmcc
 
 echo "Container built!"

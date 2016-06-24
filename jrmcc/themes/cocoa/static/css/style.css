@@ -583,12 +583,16 @@ Metadata
 }
 
 .metadata span {
+    float: left;
     display: block;
     color: #888;
+    padding-right: 25px;
 }
 
 .metadata i {
-    margin-right: 20px;
+    float: left;
+    margin-right: 3px;
+    margin-top: -3px;
 }
 
 

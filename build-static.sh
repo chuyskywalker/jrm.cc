@@ -21,13 +21,9 @@ docker run -ti --rm -v `pwd`:/app chuyskywalker/hugo hugo --source="/app/jrmcc" 
 #     https://github.com/tdewolff/minify/issues/82
 #docker run -ti --rm -v `pwd`/deploy/output:/src chuyskywalker/minify minify --verbose --recursive --html-keep-whitespace /src
 
-# Pre-compress gzip everything
-compressResource() {
-    # gzip each file and give timestamp identical to that of the uncompressed source file
-    gzip -c9 "${1}" > "${1}.gz"
-    touch -c --reference="${1}" "${1}.gz"
-    echo "Compressed: ${1} > ${1}.gz"
-}
+# Minify the HTML (grunt already did CSS)
+docker run -ti --rm -v `pwd`/deploy:/src chuyskywalker/node-html-minifier \
+  find /src/output/ \( -iname "*.html" -or -iname "*htm" \) -exec bash -x -c 'html-minifier --config-file /src/html-minifier-config.json {} > {}.min; mv {}.min {}' \;
 
 EXT="css|js|eot|svg|ttf|woff|html|htm"
 echo "Compressing (${EXT}) in ${APP_DIR}"
@@ -35,23 +31,18 @@ echo "Compressing (${EXT}) in ${APP_DIR}"
 # fetch all source files by ${EXT} (extension) and pre-compress
 find "$APP_DIR" -type f -regextype posix-extended \( -iregex ".*\.(${EXT})$" \) -print0 | while read -d '' sourceFile
 do
-    if [[ -f "${sourceFile}.gz" ]]; then
-        # only re-gzip if source file is different in timestamp to the existing gzip file
-        if [[ (${sourceFile} -nt "${sourceFile}.gz") || (${sourceFile} -ot "${sourceFile}.gz") ]]; then
-            # re-compress
-            compressResource "${sourceFile}"
-        else
-            echo "IsCompressed: ${sourceFile}"
-        fi
-    else
-        compressResource "${sourceFile}"
-    fi
+    gzip -c9 "${sourceFile}" > "${sourceFile}.gz"
+    echo "Compressed: ${sourceFile} > ${sourceFile}.gz"
 done
+
+ID=$(git rev-parse --short=12 HEAD)
+
+CNAME="jrmcc:$ID"
 
 # Build container
 cd deploy
-docker build -t chuyskywalker/jrmcc .
+docker build -t $CNAME .
 
-# docker push chuyskywalker/jrmcc
+# docker push $CNAME
 
-echo "Container built!"
+echo "Container built as $CNAME"

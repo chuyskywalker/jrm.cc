@@ -1,6 +1,7 @@
 ---
 title: "Battlestation"
 date: 2015-04-10T00:00:00Z
+series: [ "Battlestation" ]
 ---
 
 <p>
@@ -58,3 +59,6 @@ date: 2015-04-10T00:00:00Z
     also kinda see where I clipped a piece of the fan grating out so I could wire the
     BluRay drive in via the eSata.
 </p>
+
+
+The desk itself is a nearly _**10 year old**_ Ikea Jerker. And yes, still the best desk ever.

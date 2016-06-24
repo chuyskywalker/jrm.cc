@@ -11,17 +11,14 @@ cd $DIR
 APP_DIR="./deploy/output"
 
 # Remove any existing output
+echo "-- Clean old builds (if present)"
 rm -rf ${APP_DIR}
 
-# Build static site
+echo "-- Build static site (hugo)"
 docker run -ti --rm -v `pwd`:/app chuyskywalker/hugo hugo --source="/app/jrmcc" --destination="/app/deploy/output" --baseUrl="http://jrm.cc/"
 
-# Minify it all
-#  -- Ofline till the <pre><code>whitespace muckery gets fixed up later:
-#     https://github.com/tdewolff/minify/issues/82
-#docker run -ti --rm -v `pwd`/deploy/output:/src chuyskywalker/minify minify --verbose --recursive --html-keep-whitespace /src
 
-# Minify the HTML (grunt already did CSS)
+echo "-- Minify the site html"
 docker run -ti --rm -v `pwd`/deploy:/src chuyskywalker/node-html-minifier \
   find /src/output/ \( -iname "*.html" -or -iname "*htm" \) -exec bash -x -c 'html-minifier --config-file /src/html-minifier-config.json {} > {}.min; mv {}.min {}' \;
 
@@ -36,13 +33,19 @@ do
 done
 
 ID=$(git rev-parse --short=12 HEAD)
+CNAME="registry.service.consul/jrmcc:$ID"
 
-CNAME="jrmcc:$ID"
-
-# Build container
+echo "-- Build deployment container ($CNAME)"
 cd deploy
 docker build -t $CNAME .
 
-# docker push $CNAME
+echo "-- Push to registry"
+docker push $CNAME
 
-echo "Container built as $CNAME"
+echo "-- Refresh Nomad Deployment"
+cp nomad.hcl /tmp/nomad.hcl
+sed -i -e "s#registry.service.consul/jrmcc#$CNAME#" /tmp/nomad.hcl
+docker cp /tmp/nomad.hcl nomad:/tmp/nomad.hcl
+docker exec -ti nomad nomad run -address=http://192.168.1.51:4646 /tmp/nomad.hcl
+
+echo "-- Done!"

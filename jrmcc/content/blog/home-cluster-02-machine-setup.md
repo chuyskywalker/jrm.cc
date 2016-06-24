@@ -1,6 +1,7 @@
 ---
 title: "Home Cluster (Part II): Machine Setup, PiXiEs!"
 date: 2016-06-01
+series: [ "Home Cluster" ]
 ---
 
 With my new cluster hardware in place, on thing I really did not want to do was setup all three machines by hand with install usb sticks, etc. Especially since I had the foresight to realize that I'd probably had to re-image these machines a few times in the future.
@@ -278,13 +279,3 @@ Once the machine is booted, PXE loaded, Ubuntu selected and installed I can ssh 
 Lot's of stuff to play with and explore. Give yourself a while to get through this step -- it's complicated tech, pretty deep in the stack and took me several hours over the course of a few weeks to really get locked in how I liked. I had to spend a lot of time learning about PXE, dnsmasq and just generally searching for solutions. And I probably rebooted those machines 100 times. I eventually turned my brain on and realized that it was smarter to test the PXE boot with a virtual machine (Virtualbox works great for this). Give that a try, was very successful.
 
 And the end of the day, I can completely erase any of my cluster machines and have them fully rebuilt in about 30 minutes, ready to rejoin the cluster.
-
----
-
-Series:
-
- * [Home Cluster (Part I): Motivations]({{< relref "home-cluster-01-motivation.md" >}})
- * [Home Cluster (Part II): Machine Setup, PiXiEs]({{< relref "home-cluster-02-machine-setup.md" >}})
- * [Home Cluster (Part III): Docker Networking]({{< relref "home-cluster-03-docker-networking.md" >}})
- * [Home Cluster (Part IV): Orchestration]({{< relref "home-cluster-04-orchestration.md" >}})
- * [Home Cluster (Part V): Nomad]({{< relref "home-cluster-05-nomad.md" >}})

@@ -1,6 +1,7 @@
 ---
 title: "Home Cluster (Part IV): Orchestration"
 date: 2016-06-10
+series: [ "Home Cluster" ]
 ---
 
 In this leg of my journey, let's discuss  _why_ a cluster is useful, and how to make the most use of such a setup.
@@ -54,13 +55,3 @@ Orchestration feels like a relatively new problem, but that's really not true. I
 There is TONS of information and comparisions out there about each of these, but for my personal pusposes, I have chosen to go with Nomad. It's not quite as powerful as some of the other services, but it easily does everything I need in an orchestrator and is phenominally easy to deploy and get working on pretty much any system in existence.
 
 I'll get into Nomad more in my next blog post.
-
----
-
-Series:
-
- * [Home Cluster (Part I): Motivations]({{< relref "home-cluster-01-motivation.md" >}})
- * [Home Cluster (Part II): Machine Setup, PiXiEs]({{< relref "home-cluster-02-machine-setup.md" >}})
- * [Home Cluster (Part III): Docker Networking]({{< relref "home-cluster-03-docker-networking.md" >}})
- * [Home Cluster (Part IV): Orchestration]({{< relref "home-cluster-04-orchestration.md" >}})
- * [Home Cluster (Part V): Nomad]({{< relref "home-cluster-05-nomad.md" >}})

@@ -1,6 +1,7 @@
 ---
 title: "Home Cluster (Part III): Docker Networking"
 date: 2016-06-07
+series: [ "Home Cluster" ]
 ---
 
 My primary development and deployment technology these days is Docker. I've probably gone a bit overboard on it (but not yet so much I'm using it to [sandbox my desktop](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/)).
@@ -124,13 +125,3 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 Setup as such I no longer have to contend with weird mapping scenarios, port conflicts, or inside/outside routing layers. Containers, from a network perspective, look and act like any other host on the network. Integrating with almost any application becomes a breeze and simply getting to basic contaienrs is supremely easy now.
 
 Overall, I _*highly*_ recommend this setup; containers with real IP addresses is simple in execution, highly functional, and doesn't add any significant overhead making it a wonderful runstate for containers.
-
----
-
-Series:
-
- * [Home Cluster (Part I): Motivations]({{< relref "home-cluster-01-motivation.md" >}})
- * [Home Cluster (Part II): Machine Setup, PiXiEs]({{< relref "home-cluster-02-machine-setup.md" >}})
- * [Home Cluster (Part III): Docker Networking]({{< relref "home-cluster-03-docker-networking.md" >}})
- * [Home Cluster (Part IV): Orchestration]({{< relref "home-cluster-04-orchestration.md" >}})
- * [Home Cluster (Part V): Nomad]({{< relref "home-cluster-05-nomad.md" >}})

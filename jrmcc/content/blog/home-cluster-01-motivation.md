@@ -1,6 +1,7 @@
 ---
 title: "Home Cluster (Part I): Motivations"
 date: 2016-05-27
+series: [ "Home Cluster" ]
 ---
 
 In this series, I'm going to document and explore my journey through my last hosting and development trials for 2015-2016.
@@ -46,13 +47,3 @@ All put together with a bit of wood stain and hung up:
 ![Cluster](/img/cluster.jpg)
 
 Now I've got three identical machines. I'm ready to start getting my cluster up and running.
-
----
-
-Series:
-
- * [Home Cluster (Part I): Motivations]({{< relref "home-cluster-01-motivation.md" >}})
- * [Home Cluster (Part II): Machine Setup, PiXiEs]({{< relref "home-cluster-02-machine-setup.md" >}})
- * [Home Cluster (Part III): Docker Networking]({{< relref "home-cluster-03-docker-networking.md" >}})
- * [Home Cluster (Part IV): Orchestration]({{< relref "home-cluster-04-orchestration.md" >}})
- * [Home Cluster (Part V): Nomad]({{< relref "home-cluster-05-nomad.md" >}})

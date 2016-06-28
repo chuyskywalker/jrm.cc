@@ -13,7 +13,8 @@ RUN yum install -y nginx \
  && yum -y history undo last \
  && rm -rf /var/cache/yum
 
-COPY apps.ini    /config/supervisor/apps.ini
+COPY consul.ini  /config/supervisor/consul.ini
+COPY nginx.ini   /config/supervisor/nginx.ini
 COPY consul.json /config/consul.json
 COPY nginx.conf  /etc/nginx/nginx.conf
 

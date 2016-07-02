@@ -498,6 +498,10 @@ section ol {
     padding-bottom: 30px;
 }
 
+section ul ul {
+    padding-bottom: 0px;
+}
+
 section ul li,
 section ol li {
     list-style: disc;

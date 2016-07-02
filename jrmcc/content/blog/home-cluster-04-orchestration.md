@@ -20,10 +20,7 @@ However, I have not yet addressed using all that computing power effectively or 
 
 ## Orcheststration
 
-"Orchestration", the management of a cluster, is a big topic. That said, I want to really boil it down to two primary topics:
-
-1. Scheduling
-2. Life Cycle Management
+"Orchestration", the management of a cluster, is a big topic. That said, I find it primarily boils down to two topics: _Scheduling_ and _Life Cycle Management_.
 
 ### Scheduling
 
@@ -35,7 +32,7 @@ By using this system, the process of dynamically adding/removing/updating servic
 
 ### Life Cycle Management
 
-While the scheduler has done the arduous job of figureing out where everything goes, another vitally important aspect of an orchestrator is defining what happens over the life time of your services and the cluster itself.
+While the scheduler has done the arduous job of figuring out where everything goes, another vitally important aspect of an orchestrator is defining what happens over the life time of your services and the cluster itself.
 
 The orchestrator must know how to handle individual services failing. Usually it will need rules for restarting services, or to perhaps not. The orchestator must also know how to handle a machine failure -- does it reschedule the services that were lost? What happens when that system comes back up after a restart?
 
@@ -43,11 +40,13 @@ This process is a vital extension of the scheduler, as the cluster evolves over 
 
 ### Orchestrator Contenters
 
-Orchestration feels like a relatively new problem, but that's really not true. If you look to places like VMWare it's been around for a while, but it's really come down to a more opensource and community level in the last few years with the release of several large projects out there. In no specific order:
+While Orchestration is not a truly new problem, there has been a flurry of activity in this area over the last few years. I think the issue has simply become digestable for companies that aren't on that super-scale. The rise of microservices has also helped to illuminate the need for better system management. If you look to places like VMWare it's been around for a while, but it's really come down to a more opensource and community level in the last few years with the release of several large projects out there. In no specific order:
 
 - [CoreOS / Fleet](https://coreos.com/)
 - [Kubernetes](http://kubernetes.io/)
-- [Mesos](http://mesos.apache.org/) + [Marathon](https://mesosphere.github.io/marathon/) or [Aurora](http://aurora.apache.org/)
+- [Mesos](http://mesos.apache.org/)
+  - [Marathon](https://mesosphere.github.io/marathon/)
+  - [Aurora](http://aurora.apache.org/)
 - [DC/OS](https://dcos.io/)
 - [Docker Swarm](https://docs.docker.com/swarm/)
 - [Nomad](https://www.nomadproject.io/)

@@ -46,4 +46,10 @@ sed -i -e "s#registry.service.consul/jrmcc#$CNAME#" /tmp/nomad.hcl
 docker cp /tmp/nomad.hcl nomad:/tmp/nomad.hcl
 docker exec -ti nomad nomad run -address=http://192.168.1.51:4646 /tmp/nomad.hcl
 
+echo "-- Updating consul KV for load balancer values"
+curl -v -X PUT -d 'jrm.cc' \
+  http://consul.service.consul:8500/v1/kv/websites/jrmcc/hostname
+curl -v -X PUT -d 'jrmcc' \
+  http://consul.service.consul:8500/v1/kv/websites/jrmcc/service
+
 echo "-- Done!"

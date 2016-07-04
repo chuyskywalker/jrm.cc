@@ -4,7 +4,11 @@ job "jrmcc-nomad" {
     type = "service"
     datacenters = [ "dc1" ]
     group "jrmcc-web" {
-        count = 1
+        # Attempt to always be running 2 copies, but not on the same host
+        count = 2
+        constraint {
+            distinct_hosts = true
+        }
         task "jrmcc-web-frontend" {
             driver = "docker"
             config {

@@ -2,7 +2,6 @@
 title: "Home Cluster (Part V): Nomad"
 date: 2016-06-15
 series: [ "Home Cluster" ]
-draft: true
 ---
 
 As covered in my last post about Orchestration, I decided go utilize Nomad for my cluster manager.
@@ -19,7 +18,7 @@ Option | Dilemma
 
 ## Nomad - Basic Install and Cluster Setup
 
-I'll admit it -- I'm a Hashicorp fanboy. I've yet to run into a product of theirs that wasn't just absolutely fantastic in clearly defining the problem its solving and attacking that effectively. Nomad is no exception to this: a single binary installation (thanks `golang`!) makes it very easy to get installed. Running it is super simple as well, the basic install demo couldn't be easier:
+I'll admit it -- I'm a Hashicorp fanboy. I've yet to run into a product of theirs that wasn't just absolutely fantastic in clearly defining the problem it solves and attacking that effectively. Nomad is no exception to this: a single binary installation (thanks `golang`!) makes it very easy to get installed. Running it is super simple as well, the basic install demo couldn't be easier:
 
 ```bash
 # Download!
@@ -38,8 +37,10 @@ For a more complete setup, this is how I configure my three nodes to startup:
 
 ```bash
 
+# Best quick way to get your local IP address
 MYIP=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
 
+# Setup nomad configurations
 cat <<EOF > /etc/nomad.hcl
 
 bind_addr = "${MYIP}"
@@ -82,7 +83,7 @@ docker run -d --net=host --name nomad \
 
 You can find [my Nomad dockerfile here](https://github.com/chuyskywalker/docker-nomad/blob/master/Dockerfile).
 
-It's important to note that I am running Nomad in a docker container and that has certain limitations. Specifically, I am unable to effectively use most `task drivers` since Nomad isn't operating at the host level. However, since I only plan to use Nomad for managing docker containers, this isn't a huge downside for me.
+It's important to note that I am running Nomad in a docker container and that imposes certain limitations. Specifically, I am unable to effectively use most `task drivers` since Nomad isn't operating at the host level. However, since I only plan to use Nomad for managing docker containers, this isn't a huge downside for me.
 
 ## Nomad - Usage
 
@@ -139,6 +140,6 @@ Basically, I copy the job file into the running container and then use that same
 
 # Nomad - Conclusion
 
-I, personally, find Nomad to do everything I need in an orchestrator. More importantly, it does those things well, is super simple to configure, has great integration with other Hashicorp products (like consul), and has been stable. 
+I, personally, find Nomad to do everything I need in an orchestrator. More importantly, it does those things well, is super simple to configure, has great integration with other Hashicorp products (like consul), and has been stable.
 
 Now that I have Nomad in place, I can rely on my mini-cluster to keep all my sites up in the face of catastrophic system failure.

@@ -24,19 +24,19 @@ There are a few routes you can go down when you want traffic to flow sanely betw
 
 The first path, Service Discovery, implies that each container registers its location (host ip + mapped port) with a central repository. All other services must look up connection details from the registry. This can work well, and my favorite tool for the job is Consul, but it has the downside that getting all the fiddly bits worked out can be hair-pullingly complicated.
 
-For example, if the consul agent runs outside the container, it can't execute shell checks _inside_ the container very effectively. Consul *does* support `docker exec` style checks, but the performance of doing so every 5 seconds for a lot of containers is quite poor. That leaves you with only http, tcp, or ttl checks negating an entire arena of premade Nagio script checks.
+Running a consul agent on the host, it becomes impractical to execute shell checks _inside_ a container very effectively. Consul *does* support `docker exec` style checks, but the performance of doing so every 5 seconds for a lot of containers is quite poor. That leaves you with only http, tcp, or ttl checks negating an entire arena of premade Nagio script checks. Additionally, registering containers (and deregistering) can be problematic
 
-You can, alternatively, put a consul agent inside your container which is ideal from a deployment perspective, but you now have the problem that the IP consul finds is an unroutable `172...` address. So, you have to chicken-peck-hack the host ip _and_ mapped port into the container. And you have to setup port mappings so that other consul agents can correctly gossip to this internal consul agent. Ugh.
+You can, alternatively, put a consul agent inside your container which is ideal from a deployment perspective, but you now have the problem that the IP consul finds is an unroutable (across hosts) `172...` address. So, you have to chicken-peck-hack the host ip _and_ mapped port into the container. And you have to setup port mappings so that other consul agents can correctly gossip to this internal consul agent. Ugh.
 
 There are ways to alleviate this a bit. [Registrator](https://github.com/gliderlabs/registrator), for example, is very useful but the approach has a limited shelf life, in my opinion. The automated tooling is too basic and if you want to really take advantage of the consul's power, you end up with too much manual orchestration.
 
 ### Overlay Networks
 
-One of the major recent upgrades to Docker was adding support for "overlay networks". The gist of it is that you can create a `network` than is discoverable and spans across multiple docker hosts. I won't lie, I spend _some_ time experimenting with this, but I didn't find it very palettable. First, you need to have a working k/v store in place (which I do, with consul), but since I run mine FROM docker, and it wants this service up when the daemon starts, it gets kinda weird.
+One of the major recent upgrades to Docker was adding support for "overlay networks". The gist of it is that you can create a `network` than is discoverable and spans across multiple docker hosts. I won't lie, I spent _some_ time experimenting with this, but I didn't find it very palettable. First, you need to have a working k/v store in place (which I do, with consul), but since I run consul _from_ docker, and it wants this service up when the daemon starts, it gets kinda weird.
 
 Ultimately, what really killed it for me was that I had a hard time getting traffic into the cluster from other non-overlay-networked machines in my system. Back to port mapping? Nah, thanks.
 
-I don't know if there are any major/minor performance concerns with the overlay network setup either, but I imagine there's got to be some; not a huge turn off since I never really explored the path enough to find that out, but I'd be willing to bet...
+I don't know if there are any major/minor performance concerns with the overlay network setup either, but I imagine there's got to be some; not a huge turn-off since I never really explored the path enough to find that out, but I'd be willing to bet...
 
 ### Routable IPs
 

@@ -12,7 +12,7 @@ With a single server, you run all services in one place. If the server goes down
 
 When running a single server, the question "Where do I run service X?" only has a single answer -- on that one server.
 
-A cluster's priamry purpose is to have no single points of failure. This is known as _redundancy_. Secondarily, a cluster gives you more computing power overall as well.
+A cluster provides two important benefits; more computing power and the ability to survive a single point of failure. The later is known as _redundancy_.
 
 So far, for redudancy I have put three phsyical machines into place. This ensures that if a ram module goes bad, processor dies, power supply shorts, etc that I've still got available hardware to run my services.
 
@@ -26,9 +26,7 @@ However, I have not yet addressed using all that computing power effectively or 
 
 With multiple machines available for running a service, where do you place it in the cluster? You'll need a way to figure out what a service needs (ram, cpu, diskspace, etc) what machines have those resources, and get that deployed.
 
-A scheduler takes care of this problem of giving you a framework (job specs) to specify and then using those for all services to figuring out where each  should be run.
-
-By using this system, the process of dynamically adding/removing/updating services across a cluster you let the computers do all the heavy lifting of figuring out how to make it all fit by way of declarative means instead of imperative.
+A scheduler takes care of this problem by providing you a way to declare "I want my service to exist in _this_ state, and it will need _these_ resources (ram, cpu, etc)". You provide this specification to the scheduler and it does the computational work of finding a place to put it, and doing so.
 
 ### Life Cycle Management
 
@@ -40,7 +38,7 @@ This process is a vital extension of the scheduler, as the cluster evolves over 
 
 ### Orchestrator Contenters
 
-While Orchestration is not a truly new problem, there has been a flurry of activity in this area over the last few years. I think the issue has simply become digestable for companies that aren't on that super-scale. The rise of microservices has also helped to illuminate the need for better system management. If you look to places like VMWare it's been around for a while, but it's really come down to a more opensource and community level in the last few years with the release of several large projects out there. In no specific order:
+While Orchestration is not a truly new problem, there has been a flurry of activity in this area over the last few years. In part, the rise of microservices has helped to illuminate the need for better service management. But, if you look to places like VMWare this concept has been around for a while. The change, as of late, has really come down to a more opensource and community level with the release of several large projects for orchestration. In no specific order:
 
 - [CoreOS / Fleet](https://coreos.com/)
 - [Kubernetes](http://kubernetes.io/)

@@ -79,11 +79,11 @@ img {
 }
 
 img.float_left {
-    margin: 10px 40px 30px 0;
+    margin: 10px 40px 20px 0;
 }
 
 img.float_right {
-    margin: 10px 0 30px 40px;
+    margin: 10px 0 20px 40px;
 }
 
 li {
@@ -251,7 +251,7 @@ h4 { font-size:16px; }
 h5 { font-size:14px; }
 h6 { font-size:12px; }
 
-p         { margin-bottom: 30px;}
+p         { margin-bottom: 20px;}
 em, i     { font-style: italic;}
 strong, b { font-weight: bold;}
 .small    { font-size: 80%;}
@@ -477,7 +477,7 @@ section .post_date:hover {
 }
 
 section .post_title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 80%;
 }
 
@@ -495,7 +495,7 @@ section button {
 
 section ul,
 section ol {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 section ul ul {
@@ -524,7 +524,7 @@ section li > code {
 /* Post Types */
 section.quote {
     background: #f6f4ee;
-    padding: 80px 80px 30px 200px;
+    padding: 80px 80px 20px 200px;
     -webkit-transition:all .25s ease-in-out;
     -moz-transition:all .25s ease-in-out;
     -o-transition:all .25s ease-in-out;
@@ -568,8 +568,8 @@ section.quote:hover .author {
 /* Blockquotes */
 blockquote {
     width: 100%;
-    padding: 0 0 0 30px;
-    margin: 10px 0 30px 0;
+    padding: 0 0 0 20px;
+    margin: 10px 0 20px 0;
     border-left: 10px solid #ff6644;
     font-size: 18px;
     color: #838689;
@@ -604,59 +604,6 @@ Metadata
 
 
 /* --------------------------------------------------------------
-Comments
--------------------------------------------------------------- * /
-.comments h5 {
-    margin: 60px 0 30px 0;
-}
-
-.comment .avatar {
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-.comment h5 {
-    color: #555759;
-    margin: 20px 0 0 0;
-}
-
-.comment .comment-date {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #777;
-}
-
-.comment p {
-    margin-left: 70px;
-    margin-bottom: 40px;
-}
-
-.reply {
-    margin-left: 70px;
-}
-
-.comment-form h6 {
-    text-transform: uppercase;
-    color: #aaa;
-}
-
-.comment-form input {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.comment-form textarea {
-    width: 100%;
-    min-height: 140px;
-    margin-bottom: 40px;
-}
-
-.comment-form button {
-    float: right;
-}
-
-
-/* --------------------------------------------------------------
 Pagination
 -------------------------------------------------------------- */
 .pagination {
@@ -667,85 +614,6 @@ Pagination
 .pagination button {
     margin-bottom: 5px;
 }
-
-
-/* --------------------------------------------------------------
-Archive
--------------------------------------------------------------- * /
-.archives {
-    padding-top: 160px;
-    padding-left: 5px;
-}
-
-.archives ul {
-    margin-bottom: 50px;
-}
-
-.archives ul li {
-    padding: 0 0 5px 0;
-}
-
-/* Styled H5 and UL (border and circles) * /
-.archives .styled {
-    display: block;
-    background: url('../img/circle.png') no-repeat left;
-    padding-left: 50px;
-    line-height: 30px;
-}
-
-.archives .styled_ul {
-    margin: -20px 0 -5px 10px;
-    padding: 20px 0 50px 30px;
-    border-left: 10px solid #eee;
-}
-
-.archives .styled_ul_last {
-    margin: -20px 0 50px 10px;
-    padding: 20px 0 0 30px;
-    border-left: 10px solid #eee;
-}
-
-
-/* --------------------------------------------------------------
-Contact form
--------------------------------------------------------------- * /
-.contact h6 {
-    text-transform: uppercase;
-    color: #aaa;
-}
-
-.contact input {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.contact textarea {
-    width: 100%;
-    min-height: 140px;
-    margin-bottom: 40px;
-}
-
-.contact button {
-    float: right;
-}
-
-.message {
-    text-transform: uppercase;
-    color: #bbb;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-label.error {
-    display: block;
-    font-size: 12px;
-    font-weight: bold;
-    color: #f36b6b;
-    text-transform: uppercase;
-    margin-top: -30px;
-    margin-bottom: 30px;
-}
-
 
 /* --------------------------------------------------------------
 Footer
@@ -800,62 +668,6 @@ button.linkedin {
 
 button.linkedin:hover {
     background: #204c8b;
-}
-
-/*
-button.twitter {
-    background: #33ccff;
-}
-
-button.twitter:hover {
-    background: #19abdc;
-}
-
-button.google_plus {
-    background: #444;
-}
-
-button.google_plus:hover {
-    background: #373737;
-}
-
-button.pinterest {
-    background: #d01c2c;
-}
-
-button.pinterest:hover {
-    background: #970b18;
-}
-*/
-
-/* --------------------------------------------------------------
-Twitter
--------------------------------------------------------------- * /
-.tweet_list {
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-}
-
-.tweet_list li {
-    overflow-y: auto;
-    overflow-x: hidden;
-    list-style-type: none;
-    margin-bottom: 20px;
-}
-
-.tweet_list .tweet_avatar {
-    padding-right: .5em; float: left;
-}
-
-.tweet_list .tweet_avatar img {
-    vertical-align: middle;
-}
-
-.tweet_time {
-    font-size: 14px;
-    font-style: italic;
-    display: block;
 }
 
 /* --------------------------------------------------------------
@@ -924,7 +736,7 @@ Media queries
     }
 
     section {
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     section .post_date {

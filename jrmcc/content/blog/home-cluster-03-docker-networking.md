@@ -57,6 +57,7 @@ auto br0
 iface br0 inet static
     address 192.168.1.51
     netmask 255.255.0.0
+    gateway 192.168.1.1
     bridge_ports enp1s0
     bridge_stp off
     bridge_fd 0

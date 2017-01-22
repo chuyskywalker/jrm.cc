@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/chuyskywalker
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jrm.cc
+  * I am chuyskywalker (https://keybase.io/chuyskywalker) on keybase.
+  * I have a public key with fingerprint 45FC 2659 BCE7 ECCB 629D  3BE7 5A27 4011 BC1A 6F11
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018dd406de29d825c1bdf74099e3802d5d30e86dd4cfae593c4590cde38856b2560a",
+            "fingerprint": "45fc2659bce7eccb629d3be75a274011bc1a6f11",
+            "host": "keybase.io",
+            "key_id": "5a274011bc1a6f11",
+            "kid": "01018dd406de29d825c1bdf74099e3802d5d30e86dd4cfae593c4590cde38856b2560a",
+            "uid": "dd07baff63671f1536b5590b4fff4419",
+            "username": "chuyskywalker"
+        },
+        "service": {
+            "hostname": "jrm.cc",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1485067965,
+    "expire_in": 157680000,
+    "prev": "43c1c3464b26e9e90c0512fad7919c0bcd997872b06002b8223d240b8771e20e",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIoAnicrZJZSBVRGMevlpW3xLBICoOaFloszpnlzMxNKk0oo6SFSqS8zVlGx6t3
+bjNzr16khQiUghZCITSiqOhWYEEUSIK2EfpivbRgRmFW2kIUQUTSGam3Hjsvh/N9
+v///Wzj3ssYFgmnJlWfWPaqYMpzW290SD5Qd2t7ZIGCbJoVQgxBhYxerocz1whGL
+CiEBQAA1SmWAKBN1qokKgZiaqgx0nUkaEKlCJcA0xBliGkzRJSIrOiCUZzUFYVFB
+wBDyBdOKVjIn5lhRj9vKiklEpOiYMJURghH3ljBTFUPk1hBiAg1kQsiFVbbrK3hz
+2HDZcsvmMf4Ij7X3D/4/9x0fs6MUqNgwTSQhFZpQkRBWOI1l0zRlGeo+6DInatQy
+TpOqeNKNJOuMmghzhL35Ak8lLML87frj/MGqndrlhHBpzLE9m9g1PFbleTE35Gu8
+ZMyH6hgO/5GHsRWlfI1ckWCOa9lRIQQ5STzL94OypgCk6kjJF1h9zHJY2PIJRUUa
+4MevwxL+8iUCiSQjGYuI6YwPDRQomgZVdagTgAnVdVVTRQwQACLWRFGiogywpqqQ
+iYAJ/kB7orYQ4pU8o5JbulZl1PDiDhP23unaOT6QFgxMyEj3v1cgmDn176c7MGPi
+6IrLX7I3lgy0z++8f6u94NirpsJJiWvvfryVr1wYrIt0X+zIvbvlcCT05fxIdWG6
+QGpSqTnLHqUSxZvots8DiyY3tl890zKjbvjp+7LRr80PPpT2n2jd0tP4Zuj5vsBj
+2F8aabuBhayqhzc3f5v+4tyv3L795rPj1/NW7JqTm5E/WFw6oSin5+Ss5u/roRm/
+tKp54e2h8uxXeUcqWOHq02nHc+a31O6e+0lfe2oNaS3etVjJcD+3jS831RvR4LTW
+TxWr62enXnYdejDv2pPRhdm04ej3mSxzpKn5Y1A8eEX82XurZy3qWxCccnDr6yUF
+X4t2dNvy0lhinjsro+gsaCvpyBzY8Bssjjsi
+=jQhi
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chuyskywalker
+
+==================================================================

@@ -20,7 +20,7 @@ echo "-- Minify the site html"
 docker run -ti --rm -v `pwd`/deploy:/src chuyskywalker/node-html-minifier \
   find /src/output/ \( -iname "*.html" -or -iname "*htm" \) -exec bash -c 'echo " - {}"; html-minifier --config-file /src/html-minifier-config.json {} > {}.min; mv {}.min {}' \;
 
-EXT="css|js|eot|svg|ttf|woff|html|htm"
+EXT="css|js|eot|svg|ttf|woff|html|htm|txt"
 echo "-- Compressing (${EXT}) in ${APP_DIR}"
 
 # fetch all source files by ${EXT} (extension) and pre-compress

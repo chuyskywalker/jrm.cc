@@ -30,26 +30,10 @@ do
     echo " - ${sourceFile} > ${sourceFile}.gz"
 done
 
-ID=$(git rev-parse --short=12 HEAD)
-CNAME="registry.service.consul/jrmcc:$ID"
+CNAME="127.0.0.1/jrmcc:latest"
 
 echo "-- Build deployment container ($CNAME)"
 cd deploy
 docker build -t $CNAME .
-
-echo "-- Push to registry"
-docker push $CNAME
-
-echo "-- Refresh Nomad Deployment"
-cp nomad.hcl /tmp/nomad.hcl
-sed -i -e "s#registry.service.consul/jrmcc#$CNAME#" /tmp/nomad.hcl
-docker cp /tmp/nomad.hcl nomad:/tmp/nomad.hcl
-docker exec -ti nomad nomad run -address=http://192.168.1.51:4646 /tmp/nomad.hcl
-
-# echo "-- Updating consul KV for load balancer values"
-# curl -v -X PUT -d 'jrm.cc' \
-#   http://consul.service.consul:8500/v1/kv/websites/jrmcc/hostname
-# curl -v -X PUT -d 'jrmcc' \
-#   http://consul.service.consul:8500/v1/kv/websites/jrmcc/service
 
 echo "-- Done!"

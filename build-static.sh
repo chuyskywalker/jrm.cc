@@ -36,4 +36,9 @@ echo "-- Build deployment container ($CNAME)"
 cd deploy
 docker build -t $CNAME .
 
+echo "-- Deploying locally"
+docker stop jrmcc-container 2>/dev/null || true
+docker rm jrmcc-container 2>/dev/null || true
+docker run -d --name jrmcc-container -p 8082:80 127.0.0.1/jrmcc:latest
+
 echo "-- Done!"

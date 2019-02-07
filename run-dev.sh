@@ -12,4 +12,4 @@ docker rm jrmccdev 2>/dev/null
 docker rm -f jrmccdev 2>/dev/null
 
 # Start up the latest and greatest
-docker run -d --name=jrmccdev -v `pwd`/../:/app jrmcc
+docker run -d --name=jrmccdev -v `pwd`/../:/app -p 81:81 jrmcc

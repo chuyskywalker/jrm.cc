@@ -3,7 +3,7 @@ title: "A Lit Multi-Layer Unicorn in Acrylic"
 date: 2019-03-01T16:00:00Z
 ---
 
-<video autoplay="" loop="" class="" style="max-width: 100%; min-height: 409.5px;">
+<video autoplay loop muted controls style="max-width: 100%; min-height: 409.5px;">
 <source type="video/mp4" src="/unicorn/Wv3FF1k.mp4">
 </video>
 

@@ -5,17 +5,17 @@ date: 2021-03-31T00:00:00Z
 
 About three years ago, I bought a [BLACK+DECKER 20V Max Handheld Vacuum, Cordless, Grey BDH2000PL](https://www.amazon.com/gp/product/B00IOEFBKS) and it's been a really nice little vacuum for small pickups. A few months ago, sadly, it would start up fine, but you'd hear the motor spin down after about a minute, and then 20 seconds later it would putter to a stop. The battery was on the outs.
 
-I've also recently been bulking up on battery building experience for PEVs (Personal Electric Vehicles) and figured, "how hard could it be to fix this?"
+I've also recently been bulking up on battery building experience for PEVs (Personal Electric Vehicles) and figured, _"how hard could it be to fix this?"_
 
-And, actually, not super hard. Here's the steps I went through to do so:
+As it turns out -- not super hard. Here's the steps I went through to do so:
 
 ## Disassembly
 
-Take the vacuum apart. Remove two screws holding the cover on. Lift up lightly and then slide towards the rear to escape some plast tab detends. Be careful here as if you break these there is no fixing them.
+Take the vacuum apart. Remove two screws holding the cover on. Lift up lightly and then slide towards the rear to escape some plastic tab detents. Be careful here as if you break these there is no fix, you'll end up with a loose cover you'll have to, I suppose, tape back on later.
 
-Slide out the battery pack and disconnect it from the main body. I have to snip the cable connector pins to get mine apart. The plastic pack is held together with some simple snaps, just lever them up to pull the top off.
+Slide out the battery pack and disconnect it from the main body. I had to snip the cable connector retainer clips a bit to get mine apart. The plastic pack is held together with some simple snaps, just lever them up to pull the top off.
 
-Here's where you'll end up, and where most folks give up because, let's be honest, a soldering iron let along a battery welder, is pretty rare to have.
+Here's where you'll end up, and where most folks give up because, let's be honest, a soldering iron let along a battery welder, is pretty rare to have:
 
 ![](/img/vacuum-repair/2021-03-21 20.31.47.jpg)
 
@@ -36,7 +36,7 @@ Add some extra cell protection on the postive ends:
 ![](/img/vacuum-repair/2021-03-31 17.25.47.jpg)
 _(Ok, I only had cell protectors for 21700 cells, so they are a bit large)_
 
-Insert them all into the holders in the same directionality as originally shown.
+Insert them all into the holders in the same directionality as originally shown. I found that it was easier to insert all of them negative first and push it through.
 
 ![](/img/vacuum-repair/2021-03-31 17.27.16.jpg)
 
@@ -55,4 +55,4 @@ Finally, once you are done, it is time for the traditional _"first charge on the
 
 ![](/img/vacuum-repair/2021-03-31 17.53.30.jpg)
 
-This should give the vacuum several more years of life and I can likely just do this again and again till the motor gives out. Which is also probably even easier to replace.
+This should give the vacuum several more years of life and I can likely just do this again and again till the motor gives out -- which is also probably even easier to replace.

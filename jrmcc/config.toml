@@ -11,6 +11,8 @@ layoutdir = "layouts"
 publishdir = "public"
 author = "Jeff Minard"
 
+sectionPagesMenu = 'main'
+
 pygmentsuseclasses = true
 #disqusShortname = "cocoaexamplesite" # TODO: optional, comment out to disable Disqus
 pluralizelisttitles = false

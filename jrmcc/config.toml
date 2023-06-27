@@ -17,6 +17,9 @@ pygmentsuseclasses = true
 #disqusShortname = "cocoaexamplesite" # TODO: optional, comment out to disable Disqus
 pluralizelisttitles = false
 
+[markup.goldmark.renderer]
+    unsafe= true
+
 [Taxonomies]
     tag = "tags"
     series = "series"

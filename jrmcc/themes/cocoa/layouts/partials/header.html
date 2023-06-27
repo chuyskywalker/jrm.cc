@@ -25,15 +25,8 @@
         <h1 class="logo"><a href="/"><span>Jeff Minard</span></a></h1>
         <div class="menubutton" id="menubutton"><i class="icon-menu"></i></div>
         <nav id="sitenav">
-            <ul>
-                {{ range .Site.Pages }}
-                    {{ if eq .Section "fixed" }}
-                        <li>
-                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        </li>
-                    {{ end }}
-                {{ end }}
-            </ul>
+            {{/* partial "menu.html" (dict "menuID" "main" "page" .) */}}
         </nav>
         <br class="clear" />
     </header>
+

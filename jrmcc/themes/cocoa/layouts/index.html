@@ -3,18 +3,14 @@
 <section>
     <div class="eight columns">
         <h1 class="post_title">Hello.</h1>
-        <p>Read <a href="/about">about me</a>, check out <a href="/resume">my resume</a>, or look below for things I've written:</p>
-
+        <p>Take a read...</p>
         <ul>
-            {{ range .Data.Pages.ByPublishDate }}
-                {{ if eq .Section "blog" }}
-                    <li class="post-item">
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a> <small>({{ .Date.Format .Site.Params.DateForm }})</small>
-                    </li>
-                {{ end }}
-            {{ end }}
+            {{ range (where .Site.Pages "Section" "blog") }}{{ range .Pages }}
+            <li class="post-item">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a> <small>({{ .Date.Format .Site.Params.DateForm }})</small>
+            </li>
+            {{ end }}{{ end }}
         </ul>
-
     </div>
     <br class="clear" />
 </section>

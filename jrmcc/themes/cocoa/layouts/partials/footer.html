@@ -4,14 +4,9 @@
             <div class="five columns">
                 <h5>Recent Posts</h5>
                 <ul>
-                {{ range first 3 .Site.Pages }}
-                    {{ if eq .Section "blog" }}
-                        <li>
-                            {{ .Date.Format .Site.Params.DateForm }}<br/>
-                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        </li>
-                    {{ end }}
-                {{ end }}
+                {{ range (where .Site.Pages "Section" "blog") }}{{ range first 3 .Pages }}
+                    <li>{{ .Date.Format .Site.Params.DateForm }}<br/> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}{{ end }}
                 </ul>
             </div>
             <div class="three columns">

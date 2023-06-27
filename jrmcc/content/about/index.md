@@ -1,5 +1,6 @@
 ---
 title: "About"
+menu: "main"
 ---
 
 Hiya! My name is Jeff Minard and I have been developing web sites since 1996

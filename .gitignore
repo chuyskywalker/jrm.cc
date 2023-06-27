@@ -1,3 +1,5 @@
 node_modules
 deploy/output/
 public/
+jrmcc/.hugo_build.lock
+package-lock.json

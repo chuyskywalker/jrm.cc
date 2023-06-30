@@ -151,7 +151,7 @@ was Apache/2.2.21 with PHP 5.3.8 with APC 3.1.9.
 
 Here's a graph comparing the best runs of each decoding situation:
 
-<img src="/img//php-data-cache-speed-baseline.png" alt="" width="743" height="735">
+<img src="/img/php-data-cache-speed-baseline.png" alt="" width="743" height="735">
 
 And an [ODS (Open Office Calc) file of the raw results](/other/php-data-cache-speed.ods)
 and a few other graphs.

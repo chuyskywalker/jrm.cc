@@ -11,16 +11,19 @@
         {{ if .Params.series }}
         <hr />
         <div>
-            {{ $name := index .Params.series 0 }}
-            <p><b>{{$name}}</b> series:</p>
-            {{ $name := $name | urlize }}
-            {{ $series := index .Site.Taxonomies.series $name }}
-            <ul>
-            {{ range ($series.Pages).Reverse }}
-            	<li><a href="{{.RelPermalink}}">{{.LinkTitle}}</a></li>
-            {{end}}
-            </ul>
-        {{end}}
+            {{ range $idx, $name := .Params.series }}
+                <p><b>{{ $name }}</b>:</p>
+                {{ $urlName := $name | urlize }}
+                {{ $series := index $.Site.Taxonomies.series $urlName }}
+                <ul>
+                {{ range ($series.Pages).Reverse }}{{ if eq $idx 0 }}
+                    <li><a href="{{.RelPermalink}}">{{.LinkTitle}}</a></li>
+                {{ else if .Params.first }}
+                    <li><a href="{{.RelPermalink}}">{{.LinkTitle}}</a></li>
+                {{ end }}{{ end }}
+                </ul>
+            {{ end }}
+        {{ end }}
         </div>
 
         <div class="metadata">

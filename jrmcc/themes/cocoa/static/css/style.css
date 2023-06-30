@@ -785,3 +785,12 @@ td
 {
 	padding: 7px 17px 7px 17px;
 }
+
+figcaption {
+    text-align: center;
+    padding: 0;
+    margin: -10px 0 0 0;
+    font-style: italic;
+    font-size: 80%;
+    font-weight: bold;
+}

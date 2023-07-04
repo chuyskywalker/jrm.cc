@@ -1,0 +1,43 @@
+{{ partial "header.html" . }}
+
+<section>
+    <div class="eight columns">
+
+        <h1 class="post_title">{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}</h1>
+        <span class="post_date">{{ .Date.Format "Jan. 02" }}</span>
+
+        {{ .Content }}
+
+        ---
+
+        {{ .Params.series }}
+
+        ---
+
+        {{ (first 1 .Params.series) }}
+
+        wat
+        {{ range .Site.RegularPages }}
+        - <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}: {{ .Params.series }}</a> <br/>
+        {{ end }}
+        the hell
+
+        <h2>Build Posts</h2>
+        <ul>
+            <li>why</li>
+            {{ range where .Site.RegularPages.ByDate "Params.series" (first 1 .Params.series) }}
+            <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+            {{ end }}
+            <li>no posts</li>
+        <ul>
+
+        <div class="metadata">
+            <span><i class="icon-time"></i>{{ .Date.Format "2006-01-02" }}</span>
+            <span><i class="icon-pencil"></i><a href="https://github.com/chuyskywalker/jrm.cc/tree/master/jrmcc/content/{{ .File.Path }}">Edit this page</a></span>
+        </div>
+
+    </div>
+    <br class="clear" />
+</section>
+
+{{ partial "footer.html" . }}

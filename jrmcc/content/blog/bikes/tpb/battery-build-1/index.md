@@ -1,10 +1,7 @@
 ---
 title: "TPB - Battery Build, Part 1"
 date: 2023-06-29
-series: [ 
-    "The Purple Bike", 
-    #"PEV Builds" 
-    ]
+series: [ "The Purple Bike" ]
 ---
 
 Over the last day or two I've been working on the battery build for TPB.
@@ -46,7 +43,6 @@ And with that side all taken care of, the primary task of welding the battery is
 ![Kapton on the final side](<2023-06-29 20.46.05.jpg> "All that gold tape, yay!")
 
 For some extra fun, here is a video where I'm welding together the end tabs (where the negative and positive wires solder on) so that they act as a single tab.
-
 
 {{< youtube O4QhmEUKoq4 >}}
 

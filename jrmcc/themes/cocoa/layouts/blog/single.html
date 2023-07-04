@@ -4,7 +4,7 @@
     <div class="eight columns">
 
         <h1 class="post_title">{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}</h1>
-        <a href="/archive.html"><span class="post_date">{{ .Date.Format "Jan. 02" }}</span></a>
+        <span class="post_date">{{ .Date.Format "Jan. 02" }}</span>
 
         {{ .Content }}
 

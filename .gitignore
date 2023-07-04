@@ -3,3 +3,4 @@ deploy/output/
 public/
 jrmcc/.hugo_build.lock
 package-lock.json
+hugo.exe

@@ -10,7 +10,7 @@ While most would jump to the [Bafang G062](https://ebikes.ca/shop/electric-bicyc
 
 ![The motor in wheel on a desk](<2023-07-05 14.46.11.jpg>)
 
-This motor promises a sustained 1200w *peak* 1500w under its a 1:5 gear reduction.
+This motor promises a sustained 1200w and a *peak* **1500w** under its a 1:5 gear reduction.
 
 I ordered directly from [MXUS via Alibaba](https://mxus.en.alibaba.com/) from [this particular offering page](https://www.alibaba.com/product-detail/high-torque-48v-1500w-electric-bike_1600591696849.html). The representive I made the order arrangement with was professional, answered all my questions precisely and quickly and had the order in my hands far faster than I expected.
 
@@ -26,7 +26,7 @@ One of the things that sets this apart, in my eyes, is the very wide stator:
 
 That is 150mm in diameter; which I'm pretty sure is a fair bit larger than most other motors. Here's how I know:
 
-![Alt text](<2023-07-05 15.02.41.jpg>)
+![XF19Fat interior ring and gears](<2023-07-05 15.02.41.jpg>)
 
 The ring and gearset are the same size as other motors in this class, but you can clearly see the outer shell requires a good deal more room to accommodate the motor housing. Here's a G062 for example, care of [ToumasK on Endless-sphere](https://endless-sphere.com/sphere/threads/anyone-using-bafang-g062-1000-1000w-geared-hub-motor.109866/page-2#post-1709021):
 

@@ -2,7 +2,6 @@
 title: "TPB - The Purple Bike"
 date: 2023-06-01
 series: [ "The Purple Bike" ]
-_layout: build
 ---
 
 ![The "bike" propped up on a tree planter](<2023-07-02 13.59.16.jpg> "The Purple Bike")

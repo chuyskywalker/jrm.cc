@@ -1,6 +1,4 @@
 title = "JRM.CC"
-#relativeURLs = true
-#canonifyURLs = false
 theme = "cocoa"
 
 PygmentsCodeFences = true
@@ -8,13 +6,13 @@ PygmentsCodeFences = true
 contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"
-publishdir = "public"
+
 author = "Jeff Minard"
 
 sectionPagesMenu = 'main'
 
 pygmentsuseclasses = true
-#disqusShortname = "cocoaexamplesite" # TODO: optional, comment out to disable Disqus
+
 pluralizelisttitles = false
 
 [markup.goldmark.renderer]
@@ -24,10 +22,12 @@ pluralizelisttitles = false
     tag = "tags"
     series = "series"
     series-desc = "series-desc"
+    section = "section"
 
 [permalinks]
     fixed = "/:title/"
-    blog = "/blog/:slug/"
+    series = "/series/:title/"
+#    blog = "/blog/:slug/"
 
 [params]
     Author = "Jeff Minard"

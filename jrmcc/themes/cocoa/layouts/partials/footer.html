@@ -3,10 +3,10 @@
         <div class="slate">
             <div class="five columns">
                 <h5>Recent Posts</h5>
-                <ul>
-                {{ range (where .Site.Pages "Section" "blog") }}{{ range first 3 .Pages }}
+                <ul>                
+                {{ range first 3 .Site.RegularPages }}
                     <li>{{ .Date.Format .Site.Params.DateForm }}<br/> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                {{ end }}{{ end }}
+                {{ end }}
                 </ul>
             </div>
             <div class="three columns">

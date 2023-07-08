@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+
+<section>
+    <div class="eight columns">
+
+        {{- range after 1 .Ancestors.Reverse }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> / {{ end }}
+
+        <h1 class="post_title">{{ .Title }}</h1>
+        <span class="post_date">{{ .Date.Format "Jan. 02 2006" }}</span>
+
+        {{ .Content }}
+
+        <hr />
+        <div>
+            <p><b>More from {{ .CurrentSection.Title }}</b>:</p>
+            <ul>
+                {{ range .CurrentSection.Pages.ByDate }}
+                <li class="post-item">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a> <small>({{ .Date.Format .Site.Params.DateForm }})</small>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="metadata">
+            <span><i class="icon-time"></i>{{ .Date.Format "2006-01-02" }}</span>
+            <span><i class="icon-pencil"></i><a href="https://github.com/chuyskywalker/jrm.cc/tree/master/jrmcc/content/{{ .File.Path }}">Edit this page</a></span>
+        </div>
+
+    </div>
+    <br class="clear" />
+</section>
+
+{{ partial "footer.html" . }}

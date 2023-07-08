@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+<section>
+    <div class="eight columns">
+
+        {{- range after 1 .Ancestors.Reverse }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> / {{ end }}
+
+        <h1 class="post_title">{{ .Title }}</h1>
+
+        {{ .Content }}
+        
+        <h2>Posts in {{ .Title }}</h2>
+        <ul>
+        {{ range .Pages.ByDate }}
+        <li class="post-item">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a> <small>({{ .Date.Format .Site.Params.DateForm }})</small>
+        </li>
+        {{ end }}
+        </ul>
+
+    </div>
+    <br class="clear" />
+</section>
+{{ partial "footer.html" . }}

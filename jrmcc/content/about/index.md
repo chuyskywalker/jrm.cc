@@ -1,7 +1,11 @@
 ---
 title: "About"
 menu: "main"
+layout: fixed
+date: 2000-01-01
 ---
+
+<div class="eight columns">
 
 Hiya! My name is Jeff Minard and I have been developing web sites since 1996 when I started a little journal site via my web hosting job. Since then things sure have changed a lot ;-)
 
@@ -10,3 +14,6 @@ My career and original love started with PHP and MySQL, but programming is more 
 I also enjoy building and riding PEV's: Personal Electric Vehicles. Bikes, skateboards, onewheels, unicycles -- let me slap a motor on it and I'm in.
 
 \- Jeff Minard
+
+</div>
+<br class="clear" />

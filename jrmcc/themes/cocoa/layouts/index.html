@@ -5,11 +5,16 @@
         <h1 class="post_title">Hello.</h1>
         <p>Take a read...</p>
         <ul>
-            {{ range (where .Site.Pages "Section" "blog") }}{{ range .Pages }}
+            {{ range (where .Site.RegularPages "Params.menu" "!=" "main") }}
             <li class="post-item">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a> <small>({{ .Date.Format .Site.Params.DateForm }})</small>
+                <a href="{{ .RelPermalink }}">
+                    {{ if ne (.Section | urlize) (.CurrentSection.Title | urlize) }}
+                    {{.CurrentSection.Title }}:
+                    {{ end }}
+                    {{ .Title }}
+                </a> <small>({{ .Date.Format .Site.Params.DateForm }})</small>
             </li>
-            {{ end }}{{ end }}
+            {{ end }}
         </ul>
     </div>
     <br class="clear" />

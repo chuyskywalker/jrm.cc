@@ -36,7 +36,7 @@ For MiniMoto: it does not hardwire to the vehicle. While this is touted as a fea
 
 ### What about AirTag/Tile/Etc?
 
-I'm not considering these as they are come with a number of drawbacks compared to fully featured GPS tracker.
+I'm not considering these as they come with a number of drawbacks (range, anti-stalking alarms, etc) compared to fully-featured GPS tracker.
 
 ## VJOYCAR G28 GPS Tracker
 

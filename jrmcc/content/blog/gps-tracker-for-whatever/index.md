@@ -18,7 +18,7 @@ I've been exploring the world of GPS trackers for a little bit and found one tha
 
 Let's be clear about my purpose: I want some GPS trackers for vehicles -- bikes, cars, trucks, etc. These aren't for pets, people, purses, and such. Thus I have a few things going for me that you may not in other situations. First, there's always a battery to run from. Second, there's usually some indicator of "on"ness (ACC, controller on, etc). I want to know when these are moving when they should not be (ie: I'm not doing the moving).
 
-## Commercial Offerings
+## Commercial Offerings, Invoxia and MoniMoto
 
 Two popular options that I looked into are [Invoxia](https://www.invoxia.com/) and [MoniMoto7](https://monimoto.com/product/tracker-monimoto-7/). Both of these are nicely packaged and the subscription costs, which you're not likely to avoid([^1]), are within reason. I love, love, love the Bluetooth Low Energy tag concept that MoniMoto uses in which, if the tag is nearby, everything is good. If the tag is NOT nearby and the tracker starts moving, it goes into alert mode and you're informed and tracking starts. This is an excellent way to keep a super long battery life.
 
@@ -33,6 +33,10 @@ For Invoxia, it's missing that "authorized person nearby, all is good" alarming/
 For MiniMoto: it does not hardwire to the vehicle. While this is touted as a feature, to me it's just one more battery hassle. If the device can survive months off two small 1.5v batteries, whatever is in my cars and bikes should provide for years. Instead, I have to hassle with digging the unit out every 6-12 months and replacing highly specific, non-rechargeable batteries? No, no thank you.
 
 **For both:** Each is locked into their esim/networks and cloud-based app. If either of them ever chose to shutdown, raise their rates, or sell your data _(which, let's be honest, they're likely already doing)_ you get zero say in the matter other than creating another piece of ewaste when you throw it away.
+
+### What about AirTag/Tile/Etc?
+
+I'm not considering these as they are come with a number of drawbacks compared to fully featured GPS tracker.
 
 ## VJOYCAR G28 GPS Tracker
 

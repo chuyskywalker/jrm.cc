@@ -10,3 +10,10 @@ figcaption {
     font-weight: bold;
 }
 
+section p>em code {
+    font-size: 14px;
+    font-family: monospace;
+    background: #eee;
+    border-radius: 7px;
+    padding: 2px 5px;
+}

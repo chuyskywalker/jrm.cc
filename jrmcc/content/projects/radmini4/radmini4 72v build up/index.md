@@ -1,7 +1,6 @@
 ---
 title: "Complete Overhaul"
 date: 2023-06-23
-series: [ "RadMini4" ]
 ---
 
 In picking up a RadMini4, my goal was to have a bike that would be a bit easier to transport, but still have the range and style I like.

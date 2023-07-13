@@ -1,7 +1,6 @@
 ---
 title: "72v Battery Build(s)"
 date: 2023-06-18
-series: [ "RadMini4" ]
 ---
 
 A picture journey in the 72v battery for the RadMini4.

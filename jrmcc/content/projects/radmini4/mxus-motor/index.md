@@ -1,7 +1,6 @@
 ---
 title: "MXUS XF19FAT Motor"
 date: 2023-07-05
-series: [ "RadMini4" ]
 ---
 
 As part of upgrading my recently acquired RadMini4 (2019), I wanted a beefier, torquier, and faster motor.

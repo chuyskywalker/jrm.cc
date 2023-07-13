@@ -1,7 +1,6 @@
 ---
 title: "Second Battery Mount"
 date: 2023-05-24
-series: [ "RadMini4" ]
 ---
 
 One of the aspects of the RadMini4 that I really like is the dual tube design. For starters, it just just neat, but for me it's also a great shape to build on.

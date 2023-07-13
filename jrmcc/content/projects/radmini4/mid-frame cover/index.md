@@ -1,7 +1,6 @@
 ---
 title: "Mid-frame cover"
 date: 2023-05-25
-series: [ "RadMini4" ]
 ---
 
 One of the bane's of every custom upgraded bike is the wire mess -- there's simply no DIY ebike that can compare to the made-for-the-bike custom wire harness that comes on factory made bikes.

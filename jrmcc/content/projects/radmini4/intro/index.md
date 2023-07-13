@@ -1,7 +1,6 @@
 ---
 title: "Project Intro"
 date: 2023-05-01
-series: [ "RadMini4" ]
 ---
 
 While I love the 20x4 fat bike ecosystem, they're very often quite non-portable. In wanting something that would be easier to take places, I set my sights on a RadMini4, 2019 edition.

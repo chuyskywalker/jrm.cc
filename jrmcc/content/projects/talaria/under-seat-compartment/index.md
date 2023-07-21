@@ -23,14 +23,9 @@ And, even when you find it, it looks like it belongs, plus there's no visible wi
 
 ![Low angle up and under seat](<2023-07-19 22.40.02.jpg> "There it is!")
 
-
 ## Helpful wiring notes
 
-If you trace the start button to its connector, there are a few useful wires here. You'll find a ground, battery voltage while the bike is off and a wire for battery voltage when the bike is on.
-
-![Close up of wire connector](<2023-07-18 17_53_45-Window.png>) 
-
-There is also a wire which goes to the rear light which carries 12v when the bike is on. I don't have any info on how much draw these leads can handle.
+There is a three wire plug going to the rear light which carries 12v when the bike is on and a separate 12v when the brakes are pulled. I don't have any info on how much draw this circuit can handle.
 
 # Make your own!
 

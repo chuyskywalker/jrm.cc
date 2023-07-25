@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfSerializableParameter xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema">
+    <SerializableParameter>
+        <Address>7</Address>
+        <Value>1275</Value>
+        <Notes>Current Regulator Kp: 0.31 (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>8</Address>
+        <Value>2765</Value>
+        <Notes>Current Regulator Ki: 172.81 (scale = 16)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>12</Address>
+        <Value>7561</Value>
+        <Notes>PLL Kp Old: 7561 Level 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>13</Address>
+        <Value>97</Value>
+        <Notes>PLL Ki Old: 97 Level 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>51</Address>
+        <Value>0</Value>
+        <Notes>Current Regulator Bandwidth: 0 rads</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>52</Address>
+        <Value>500</Value>
+        <Notes>PLL Bandwidth: 500 rads</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>53</Address>
+        <Value>384</Value>
+        <Notes>PLL Damping: 1.5 (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>54</Address>
+        <Value>1500</Value>
+        <Notes>PLL Kp: 1500</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>55</Address>
+        <Value>7812</Value>
+        <Notes>PLL Ki: 249984 (scale = 0.03125)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>71</Address>
+        <Value>80</Value>
+        <Notes>Max Phase Current: 80 A</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>72</Address>
+        <Value>446</Value>
+        <Notes>Kv: 9.29 RPM/V (scale = p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>73</Address>
+        <Value>2000</Value>
+        <Notes>Max Power Limit: 2000 W</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>74</Address>
+        <Value>36</Value>
+        <Notes>Ls: 36 uH</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>75</Address>
+        <Value>20</Value>
+        <Notes>Rs: 20 mOhms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>77</Address>
+        <Value>1</Value>
+        <Notes>Motor Position Sensor Type: 1[Hall sensor start and sensorless run]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>78</Address>
+        <Value>75</Value>
+        <Notes>Number of Pole Pairs: 75</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>79</Address>
+        <Value>65471</Value>
+        <Notes>Hall Offset: 719.286 deg (scale = 91.0222)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>80</Address>
+        <Value>15</Value>
+        <Notes>Hall Sector[0]: 15</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>81</Address>
+        <Value>5</Value>
+        <Notes>Hall Sector[1]: 5</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>82</Address>
+        <Value>3</Value>
+        <Notes>Hall Sector[2]: 3</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>83</Address>
+        <Value>4</Value>
+        <Notes>Hall Sector[3]: 4</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>84</Address>
+        <Value>1</Value>
+        <Notes>Hall Sector[4]: 1</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>85</Address>
+        <Value>0</Value>
+        <Notes>Hall Sector[5]: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>86</Address>
+        <Value>2</Value>
+        <Notes>Hall Sector[6]: 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>87</Address>
+        <Value>15</Value>
+        <Notes>Hall Sector[7]: 15</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>90</Address>
+        <Value>120</Value>
+        <Notes>Motor Over Temperature Trip Threshold: 120 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>91</Address>
+        <Value>100</Value>
+        <Notes>Motor Foldback Starting Temperature: 100 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>92</Address>
+        <Value>120</Value>
+        <Notes>Motor Foldback Ending Temperature: 120 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>93</Address>
+        <Value>5094</Value>
+        <Notes>Temperature Voltage at 0C: 4.353 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>94</Address>
+        <Value>3901</Value>
+        <Notes>Temperature Voltage at 25C: 3.333 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>95</Address>
+        <Value>2444</Value>
+        <Notes>Temperature Voltage at 50C: 2.088 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>96</Address>
+        <Value>1342</Value>
+        <Notes>Temperature Voltage at 75C: 1.147 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>97</Address>
+        <Value>715</Value>
+        <Notes>Temperature Voltage at 100C: 0.611 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>98</Address>
+        <Value>391</Value>
+        <Notes>Temperature Voltage at 125C: 0.334 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>106</Address>
+        <Value>2048</Value>
+        <Notes>Autostart Injection Current: 40 A (scale = 4096 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>107</Address>
+        <Value>100</Value>
+        <Notes>Sensorless Open Loop Injection Current Ramp Time: 100 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>108</Address>
+        <Value>11</Value>
+        <Notes>Autostart Max RPM: 9 RPM (scale = p[78] / 60)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>109</Address>
+        <Value>500</Value>
+        <Notes>Autostart Spinup Time: 500 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>110</Address>
+        <Value>100</Value>
+        <Notes>Alignment Hold Time: 100 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>127</Address>
+        <Value>2</Value>
+        <Notes>Motor Features: 
+			0  - 0 [Swap motor phase Blue &amp; Green]
+			1  - 1 [Fault tolerant hall (fallback to sensorless)]
+			2  - 0 [Bottom bracket motor (varying gear ratio)]
+			3  - 0 [Overload I^2t on battery not motor]
+			4  - 0 [Reserved]
+			5  - 0 [Reserved]
+			6  - 0 [Reserved]
+			7  - 0 [Reserved]
+			8  - 0 [Reserved]
+			9  - 0 [Reserved]
+			10 - 0 [Reserved]
+			11 - 0 [Reserved]
+			12 - 0 [Reserved]
+			13 - 0 [Reserved]
+			14 - 0 [Reserved]
+			15 - 0 [Reserved]
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>154</Address>
+        <Value>4096</Value>
+        <Notes>Max Regen Phase Current: 80 A (scale = 40.96 * 100 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>231</Address>
+        <Value>0</Value>
+        <Notes>Wheel Sp. Sensor Pulses Per Rev: 0 Pulses/rev</Notes>
+    </SerializableParameter>
+</ArrayOfSerializableParameter>

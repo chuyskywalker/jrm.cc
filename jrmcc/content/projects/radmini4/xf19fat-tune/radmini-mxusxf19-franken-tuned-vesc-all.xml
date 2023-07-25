@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfSerializableParameter xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema">
+    <SerializableParameter>
+        <Address>4</Address>
+        <Value>1152</Value>
+        <Notes>Baud Rate: 1152[115200 kbps]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>5</Address>
+        <Value>1</Value>
+        <Notes>Slave ID: 1 Node #</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>6</Address>
+        <Value>2</Value>
+        <Notes>HW Configuration Vector:  Level 2
+			0  - 0 [Active low over current enable]
+			1  - 1 [Comm 485]
+			2  - 0 [Power supply control of current sensors enable]
+			3  - 0 [enable DPWM mode]
+			4  - 0 [HW slave ID enable]
+			5  - 0 [Reserved]
+			6  - 0 [Light sensor enable]
+			7  - 0 [Reserved]
+			8  - 0 [Locked parameters]
+			9  - 0 [Inverted cutoff brake 1]
+			10 - 0 [Enable 6 Step mode]
+			11 - 0 [Disable field weakening safety limit]
+			12 - 0 [Reserved]
+			13 - 0 [Reserved]
+			14 - 0 [Current scaling x8]
+			15 - 0 [Reserved]
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>7</Address>
+        <Value>1275</Value>
+        <Notes>Current Regulator Kp: 0.31 (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>8</Address>
+        <Value>2765</Value>
+        <Notes>Current Regulator Ki: 172.81 (scale = 16)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>9</Address>
+        <Value>16384</Value>
+        <Notes>Speed Regulator Kp: 4 (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>10</Address>
+        <Value>4096</Value>
+        <Notes>Speed Regulator Ki: 16 (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>11</Address>
+        <Value>2</Value>
+        <Notes>Speed Regulator Mode: 2[Torque Mode With Speed Limiting]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>12</Address>
+        <Value>7561</Value>
+        <Notes>PLL Kp Old: 7561 Level 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>13</Address>
+        <Value>97</Value>
+        <Notes>PLL Ki Old: 97 Level 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>23</Address>
+        <Value>9</Value>
+        <Notes>Flux Filter Shift: 9 bits Level 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>24</Address>
+        <Value>9</Value>
+        <Notes>Flux High Pass Filter Shift: 9 bits Level 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>25</Address>
+        <Value>9</Value>
+        <Notes>Flux Frequency Filter Shift: 9 bits Level 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>32</Address>
+        <Value>2000</Value>
+        <Notes>Command Timeout Threshold: 2000 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>46</Address>
+        <Value>9999</Value>
+        <Notes>Kd Anti Theft: 39.06 pu/pu (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>49</Address>
+        <Value>0</Value>
+        <Notes>Average Command Timeout Threshold: 0 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>50</Address>
+        <Value>0</Value>
+        <Notes>Remote Comm Loss Braking Current Limit: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>51</Address>
+        <Value>0</Value>
+        <Notes>Current Regulator Bandwidth: 0 rads</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>52</Address>
+        <Value>500</Value>
+        <Notes>PLL Bandwidth: 500 rads</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>53</Address>
+        <Value>384</Value>
+        <Notes>PLL Damping: 1.5 (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>54</Address>
+        <Value>1500</Value>
+        <Notes>PLL Kp: 1500</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>55</Address>
+        <Value>7812</Value>
+        <Notes>PLL Ki: 249984 (scale = 0.03125)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>56</Address>
+        <Value>0</Value>
+        <Notes>CAN Baud Rate: 0 kbps</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>57</Address>
+        <Value>0</Value>
+        <Notes>CAN ID: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>58</Address>
+        <Value>0</Value>
+        <Notes>Communications Configuration Vector:  Level 2
+			0  - 0 [Extended 29bit ID]
+			1  - 0 [CAN faults]
+			2  - 0 [LIN Enable]
+			3  - 0 [Sleep On Sync Loss]
+			4  - 0 [Auto Operational]
+			5  - 0 [Reserved]
+			6  - 0 [Reserved]
+			7  - 0 [Reserved]
+			8  - 0 [Reserved]
+			9  - 0 [Reserved]
+			10 - 0 [Reserved]
+			11 - 0 [Reserved]
+			12 - 0 [Reserved]
+			13 - 0 [Reserved]
+			14 - 0 [Reserved]
+			15 - 0 [Virtual IO For Testing]
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>59</Address>
+        <Value>0</Value>
+        <Notes>Battery Resistance: 0 mohms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>60</Address>
+        <Value>0</Value>
+        <Notes>Phase Current New Gain Blue: 0 A/V (scale = 8)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>61</Address>
+        <Value>0</Value>
+        <Notes>Phase Current New Gain Green: 0 A/V (scale = 8)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>62</Address>
+        <Value>0</Value>
+        <Notes>Flash Parameter Read Access Code: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>63</Address>
+        <Value>2000</Value>
+        <Notes>Motor Stall Timeout: 2000 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>64</Address>
+        <Value>1152</Value>
+        <Notes>Baud Rate Port 2: 1152[115200 Baud]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>65</Address>
+        <Value>1</Value>
+        <Notes>Slave ID Port 2: 1 Node #</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>66</Address>
+        <Value>0</Value>
+        <Notes>Alternate Display Protocol: 0[Disabled]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>68</Address>
+        <Value>0</Value>
+        <Notes>Kp Anti Theft: 0 pu/rev (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>69</Address>
+        <Value>0</Value>
+        <Notes>Lm: 0 uHenries</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>70</Address>
+        <Value>48</Value>
+        <Notes>Rated System Voltage (generally leave as-is): 48 V</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>71</Address>
+        <Value>80</Value>
+        <Notes>Max Phase Current: 80 A</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>72</Address>
+        <Value>446</Value>
+        <Notes>Kv: 9.29 RPM/V (scale = p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>73</Address>
+        <Value>2000</Value>
+        <Notes>Max Power Limit: 2000 W</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>74</Address>
+        <Value>36</Value>
+        <Notes>Ls: 36 uH</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>75</Address>
+        <Value>20</Value>
+        <Notes>Rs: 20 mOhms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>76</Address>
+        <Value>4260</Value>
+        <Notes>Depricated Kv Always 1: 1.04 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>77</Address>
+        <Value>1</Value>
+        <Notes>Motor Position Sensor Type: 1[Hall sensor start and sensorless run]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>78</Address>
+        <Value>75</Value>
+        <Notes>Number of Pole Pairs: 75</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>79</Address>
+        <Value>65471</Value>
+        <Notes>Hall Offset: 719.286 deg (scale = 91.0222)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>80</Address>
+        <Value>15</Value>
+        <Notes>Hall Sector[0]: 15</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>81</Address>
+        <Value>5</Value>
+        <Notes>Hall Sector[1]: 5</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>82</Address>
+        <Value>3</Value>
+        <Notes>Hall Sector[2]: 3</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>83</Address>
+        <Value>4</Value>
+        <Notes>Hall Sector[3]: 4</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>84</Address>
+        <Value>1</Value>
+        <Notes>Hall Sector[4]: 1</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>85</Address>
+        <Value>0</Value>
+        <Notes>Hall Sector[5]: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>86</Address>
+        <Value>2</Value>
+        <Notes>Hall Sector[6]: 2</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>87</Address>
+        <Value>15</Value>
+        <Notes>Hall Sector[7]: 15</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>88</Address>
+        <Value>0</Value>
+        <Notes>Hall Interpolation Start Frequency: 0 Hz (scale = 32)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>89</Address>
+        <Value>0</Value>
+        <Notes>Hall Interpolation Stop Frequency: 0 Hz (scale = 32)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>90</Address>
+        <Value>120</Value>
+        <Notes>Motor Over Temperature Trip Threshold: 120 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>91</Address>
+        <Value>100</Value>
+        <Notes>Motor Foldback Starting Temperature: 100 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>92</Address>
+        <Value>120</Value>
+        <Notes>Motor Foldback Ending Temperature: 120 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>93</Address>
+        <Value>5094</Value>
+        <Notes>Temperature Voltage at 0C: 4.353 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>94</Address>
+        <Value>3901</Value>
+        <Notes>Temperature Voltage at 25C: 3.333 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>95</Address>
+        <Value>2444</Value>
+        <Notes>Temperature Voltage at 50C: 2.088 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>96</Address>
+        <Value>1342</Value>
+        <Notes>Temperature Voltage at 75C: 1.147 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>97</Address>
+        <Value>715</Value>
+        <Notes>Temperature Voltage at 100C: 0.611 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>98</Address>
+        <Value>391</Value>
+        <Notes>Temperature Voltage at 125C: 0.334 V (scale = 40.96 * 100 / p[19])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>99</Address>
+        <Value>4096</Value>
+        <Notes>Overload Continuous Current: 80 A (scale = 40.96 * 100 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>100</Address>
+        <Value>8192</Value>
+        <Notes>Overload Heating Current: 160 A (scale = 40.96 * 100 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>101</Address>
+        <Value>60</Value>
+        <Notes>Overload Heating Time: 60 seconds</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>102</Address>
+        <Value>1228</Value>
+        <Notes>Overload Cooling Current: 23.98 A (scale = 40.96 * 100 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>103</Address>
+        <Value>300</Value>
+        <Notes>Overload Cooling Time: 300 seconds</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>104</Address>
+        <Value>4096</Value>
+        <Notes>Overload Foldback Start: 100 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>105</Address>
+        <Value>6144</Value>
+        <Notes>Overload Foldback End: 150 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>106</Address>
+        <Value>2048</Value>
+        <Notes>Autostart Injection Current: 40 A (scale = 4096 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>107</Address>
+        <Value>100</Value>
+        <Notes>Sensorless Open Loop Injection Current Ramp Time: 100 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>108</Address>
+        <Value>11</Value>
+        <Notes>Autostart Max RPM: 9 RPM (scale = p[78] / 60)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>109</Address>
+        <Value>500</Value>
+        <Notes>Autostart Spinup Time: 500 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>110</Address>
+        <Value>100</Value>
+        <Notes>Alignment Hold Time: 100 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>111</Address>
+        <Value>0</Value>
+        <Notes>Spare Test Parameter 1: 0 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>112</Address>
+        <Value>0</Value>
+        <Notes>Spare Test Parameter 2: 0 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>113</Address>
+        <Value>0</Value>
+        <Notes>Spare Test Parameter 3: 0 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>114</Address>
+        <Value>0</Value>
+        <Notes>Spare Test Parameter 4: 0 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>115</Address>
+        <Value>0</Value>
+        <Notes>Spare Test Parameter 5: 0 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>116</Address>
+        <Value>0</Value>
+        <Notes>Single Push Assist Source: 0[Analog Input 3 (Brk2)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>117</Address>
+        <Value>0</Value>
+        <Notes>LIN BMS Battery Voltage: 0 (scale = 32)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>118</Address>
+        <Value>0</Value>
+        <Notes>Single Push Assist Boost Timer: 0 seconds</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>119</Address>
+        <Value>0</Value>
+        <Notes>Hall Transitions to Start Freewheel: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>120</Address>
+        <Value>0</Value>
+        <Notes>Battery Lower Range: 0 km (scale = 32)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>121</Address>
+        <Value>0</Value>
+        <Notes>Vehicle Maximum Power in PAS Mode Alternate: 0 W</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>122</Address>
+        <Value>1500</Value>
+        <Notes>Maximum Power in PAS Mode: 1500 W</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>123</Address>
+        <Value>0</Value>
+        <Notes>Vehicle Maximum Speed in PAS Mode Alternate: 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>124</Address>
+        <Value>0</Value>
+        <Notes>Maximum Speed in PAS Mode: 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>125</Address>
+        <Value>0</Value>
+        <Notes>Reserved Address 125: 0 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>126</Address>
+        <Value>0</Value>
+        <Notes>Reserved Address 126: 0 RPM</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>127</Address>
+        <Value>2</Value>
+        <Notes>Motor Features: 
+			0  - 0 [Swap motor phase Blue &amp; Green]
+			1  - 1 [Fault tolerant hall (fallback to sensorless)]
+			2  - 0 [Bottom bracket motor (varying gear ratio)]
+			3  - 0 [Overload I^2t on battery not motor]
+			4  - 0 [Reserved]
+			5  - 0 [Reserved]
+			6  - 0 [Reserved]
+			7  - 0 [Reserved]
+			8  - 0 [Reserved]
+			9  - 0 [Reserved]
+			10 - 0 [Reserved]
+			11 - 0 [Reserved]
+			12 - 0 [Reserved]
+			13 - 0 [Reserved]
+			14 - 0 [Reserved]
+			15 - 0 [Reserved]
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>128</Address>
+        <Value>0</Value>
+        <Notes>Hall Interpolation Transitions: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>129</Address>
+        <Value>0</Value>
+        <Notes>Max Field Weakening Current: 0 A (scale = 40.96 * 100 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>130</Address>
+        <Value>0</Value>
+        <Notes>Spare L0 Parameter: 0 (scale = 91.02222222)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>131</Address>
+        <Value>0</Value>
+        <Notes>Rated Motor Power (Street mode Throttle power): 0 W</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>132</Address>
+        <Value>0</Value>
+        <Notes>Pedalec Sensorless Open Loop Starting Current: 0 pu A (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>133</Address>
+        <Value>0</Value>
+        <Notes>Pedalec Sensorless Open Loop Freq Ramp Time ms: 0 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>134</Address>
+        <Value>0</Value>
+        <Notes>Pedalec Sensorless Closed Loop Enable Frequency: 0 Hz</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>135</Address>
+        <Value>101</Value>
+        <Notes>High Battery State of Charge Foldback Starting Capacity: 101 % SOC</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>136</Address>
+        <Value>102</Value>
+        <Notes>High Battery State of Charge foldback End Capacity: 102 % SOC</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>137</Address>
+        <Value>2</Value>
+        <Notes>Motor Temperature Source: 2[Analog Input 4 (BMS)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>138</Address>
+        <Value>0</Value>
+        <Notes>Walk Mode Signal Source: 0[Fwd/Rev or PAS 2]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>139</Address>
+        <Value>0</Value>
+        <Notes>Alternate Power Switch Source: 0[Fwd/Rev or PAS 2]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>140</Address>
+        <Value>0</Value>
+        <Notes>Alternate Speed Limit Switch Source: 0[Fwd/Rev or PAS 2]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>141</Address>
+        <Value>5291</Value>
+        <Notes>Low Voltage Cutoff (Start): 62 V (scale = 40.96 * 100 / p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>142</Address>
+        <Value>5120</Value>
+        <Notes>Low Voltage Cutoff (End): 60 V (scale = 40.96 * 100 / p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>143</Address>
+        <Value>1</Value>
+        <Notes>Cold Battery Foldback Starting Temperature: 1 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>144</Address>
+        <Value>0</Value>
+        <Notes>Cold Battery Foldback Ending Temperature: 0 deg C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>145</Address>
+        <Value>1</Value>
+        <Notes>Battery State of Charge Foldback Starting Capacity: 1 % SOC</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>146</Address>
+        <Value>0</Value>
+        <Notes>Battery State of Charge Foldback End Capacity: 0 % SOC</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>147</Address>
+        <Value>7353</Value>
+        <Notes>Fast Over Voltage Fault: 86.17 V (scale = 40.96 * 100 / p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>148</Address>
+        <Value>1024</Value>
+        <Notes>Fast Under Voltage Fault: 12 V (scale = 40.96 * 100 / p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>149</Address>
+        <Value>7353</Value>
+        <Notes>Slow Over Voltage Fault: 86.17 V (scale = 40.96 * 100 / p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>150</Address>
+        <Value>1024</Value>
+        <Notes>Slow Under Voltage Fault: 12 V (scale = 40.96 * 100 / p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>151</Address>
+        <Value>0</Value>
+        <Notes>Throttle Deadband Threshold: 0 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>152</Address>
+        <Value>5120</Value>
+        <Notes>Throttle Fault Range: 1.25 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>153</Address>
+        <Value>4096</Value>
+        <Notes>Reserved L1 1: 4096</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>154</Address>
+        <Value>4096</Value>
+        <Notes>Max Regen Phase Current: 80 A (scale = 40.96 * 100 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>155</Address>
+        <Value>4424</Value>
+        <Notes>Max Battery Current: 45 A (scale = 40.96 * 100 * p[70] / p[73])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>156</Address>
+        <Value>983</Value>
+        <Notes>Max Regen Battery Current: 10 A (scale = 40.96 * 100 * p[70] / p[73])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>157</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 1: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>158</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 2: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>159</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 3: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>160</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 4: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>161</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 5: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>162</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 6: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>163</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 7: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>164</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Watts Setpoint 8: 100 % rated power (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>165</Address>
+        <Value>0</Value>
+        <Notes>Power Map Speed Setpoint 1: 0 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>166</Address>
+        <Value>0</Value>
+        <Notes>Power Map Speed Setpoint 2: 0 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>167</Address>
+        <Value>0</Value>
+        <Notes>Power Map Speed Setpoint 3: 0 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>168</Address>
+        <Value>0</Value>
+        <Notes>Power Map Speed Setpoint 4: 0 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>169</Address>
+        <Value>3276</Value>
+        <Notes>Power Map Speed Setpoint 5: 79.98 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>170</Address>
+        <Value>3891</Value>
+        <Notes>Power Map Speed Setpoint 6: 95 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>171</Address>
+        <Value>4096</Value>
+        <Notes>Power Map Speed Setpoint 7: 100 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>172</Address>
+        <Value>4300</Value>
+        <Notes>Power Map Speed Setpoint 8: 104.98 % rated rpm (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>173</Address>
+        <Value>0</Value>
+        <Notes>Electronic Freewheeling Current: 0 A (scale = 4096 / p[71])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>174</Address>
+        <Value>0</Value>
+        <Notes>Features 2: 
+			0  - 0 [Headlight Always ON enable]
+			1  - 0 [HDQ Replicating HALL]
+			2  - 0 [Free Wheel]
+			3  - 0 [Enable Plug Braking]
+			4  - 0 [Throttle fault into Warning]
+			5  - 0 [Throttle enable while rolling backward]
+			6  - 0 [Digital throttle fault check]
+			7  - 0 [Cruise enable]
+			8  - 0 [Hill holder enable]
+			9  - 0 [Invert Bit 9 of HW Config]
+			10 - 0 [Fixed regen in forward and reverse direction]
+			11 - 0 [Throttle mapping on speed for torque mode]
+			12 - 0 [Throttle sensitivity]
+			13 - 0 [Variable regen with speed]
+			14 - 0 [Reserved]
+			15 - 0 [Reserved]
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>175</Address>
+        <Value>2048</Value>
+        <Notes>Pedal Speed Map Offset: 50 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>176</Address>
+        <Value>4096</Value>
+        <Notes>Pedal Speed Map End: 64 RPM (scale = 64)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>177</Address>
+        <Value>0</Value>
+        <Notes>Engine Braking Torque: 0 % full braking torque (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>178</Address>
+        <Value>0</Value>
+        <Notes>Torque Sensor Symmetry: 0[One Cycle (Default)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>179</Address>
+        <Value>2051</Value>
+        <Notes>Torque Assist Multiplier: 1.56 X (scale = 1024 * 15 * p[71] / 16 / p[72] / 6.283)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>180</Address>
+        <Value>0</Value>
+        <Notes>Torque Sensor Initial Torque: 0 Nm (scale = 64)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>181</Address>
+        <Value>320</Value>
+        <Notes>Torque Sensor Deadband Torque: 5 Nm (scale = 64)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>182</Address>
+        <Value>942</Value>
+        <Notes>Pedal Torque Sensor Offset: 0.23 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>183</Address>
+        <Value>50</Value>
+        <Notes>Torque Sensor Gain: 50 Nm/V</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>184</Address>
+        <Value>383</Value>
+        <Notes>Datalog Channel 1 Select: 383[Q Reference]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>185</Address>
+        <Value>381</Value>
+        <Notes>Datalog Channel 2 Select: 381[Q Feedback]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>186</Address>
+        <Value>296</Value>
+        <Notes>Datalog Channel 3 Select: 296[Ia_pu]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>187</Address>
+        <Value>405</Value>
+        <Notes>Datalog Channel 4 Select: 405[Debug6]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>188</Address>
+        <Value>409</Value>
+        <Notes>Datalog Trigger Level: 409</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>189</Address>
+        <Value>65535</Value>
+        <Notes>Datalog Trigger Mask: 65535</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>190</Address>
+        <Value>16</Value>
+        <Notes>Datalog Hold Off: 16</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>191</Address>
+        <Value>128</Value>
+        <Notes>Datalog Time Base: 128</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>192</Address>
+        <Value>0</Value>
+        <Notes>Datalog Trigger Mode: 0[Rising edge]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>193</Address>
+        <Value>1</Value>
+        <Notes>Wheel Speed Sensor Source: 1[Analog Input 3 (Brk2)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>194</Address>
+        <Value>7168</Value>
+        <Notes>Max Regen Voltage (Start): 84 V (scale = (40.96 * 100 / p[70]))</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>195</Address>
+        <Value>7211</Value>
+        <Notes>Max Regen Voltage (End): 84.5 V (scale = 40.96 * 100 / p[70])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>196</Address>
+        <Value>0</Value>
+        <Notes>Low Battery State of Charge Alarm Threshold: 0 %</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>197</Address>
+        <Value>0</Value>
+        <Notes>Voltage Model Battery State of Charge Gain: 0 % (scale = 32)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>198</Address>
+        <Value>0</Value>
+        <Notes>Voltage Model Battery State of Charge Offset: 0 % (scale = 32)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>199</Address>
+        <Value>0</Value>
+        <Notes>Axle Torque Sensor Gain Assist 1: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>200</Address>
+        <Value>0</Value>
+        <Notes>Axle Torque Sensor Gain Assist 2: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>201</Address>
+        <Value>0</Value>
+        <Notes>Axle Torque Sensor Gain Assist 3: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>202</Address>
+        <Value>0</Value>
+        <Notes>Rolling Start Speed Assist 1: 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>203</Address>
+        <Value>0</Value>
+        <Notes>Rolling Start Speed Assist 2: 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>204</Address>
+        <Value>0</Value>
+        <Notes>Rolling Start Speed Assist 3: 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>205</Address>
+        <Value>0</Value>
+        <Notes>Rolling Start Speed : 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>206</Address>
+        <Value>0</Value>
+        <Notes>Regen Brake Speed Minimum: 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>207</Address>
+        <Value>0</Value>
+        <Notes>Reserved Display Parameter: 
+			0  - 0 []
+			1  - 0 [Mode Switch Enable]
+			2  - 0 [Computer Functions Enabled]
+			3  - 0 [Permanent Speed Enabled]
+			4  - 0 [Background Light Switching Enabled]
+			5  - 0 [Locking Enabled]
+			6  - 0 [Recuperation Enabled]
+			7  - 0 []
+			8  - 0 []
+			9  - 0 [General Parameter Setting Enabled]
+			10 - 0 [No Assist Enabled]
+			11 - 0 []
+			12 - 0 []
+			13 - 0 []
+			14 - 0 []
+			15 - 0 []
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>208</Address>
+        <Value>1</Value>
+        <Notes>Control Command Source: 1[Throttle]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>209</Address>
+        <Value>0</Value>
+        <Notes>Battery Management Interface Type: 0[None]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>210</Address>
+        <Value>0</Value>
+        <Notes>Assist Mode Source: 0[None]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>211</Address>
+        <Value>0</Value>
+        <Notes>Pedal Sensor Type: 0[Single Hall]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>212</Address>
+        <Value>16434</Value>
+        <Notes>Features: 
+			0  - 0 [Reserved]
+			1  - 1 [Reverse Enable on Cruise]
+			2  - 0 [Anti theft inhibit on PAS]
+			3  - 0 [Low SOC Alarm - not used]
+			4  - 1 [Analogue Braking Enable]
+			5  - 1 [Motor Temperature Sensing Enable]
+			6  - 0 [Enable Virtual Freewheeling]
+			7  - 0 [Reverse Interlock Disabled]
+			8  - 0 [Alternate Speed Limit Enable]
+			9  - 0 [Rolling Start Enable]
+			10 - 0 [Alternate Power Limit Enable]
+			11 - 0 [Walk Mode Enable]
+			12 - 0 [Boost Mode Enable]
+			13 - 0 [Engine Braking Enable]
+			14 - 1 [Ext Fault LED on HDQ]
+			15 - 0 [Disable KM5 Speed Limits]
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>213</Address>
+        <Value>14336</Value>
+        <Notes>Throttle Max Voltage: 3.5 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>214</Address>
+        <Value>4915</Value>
+        <Notes>Throttle Start Voltage: 1.2 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>215</Address>
+        <Value>1229</Value>
+        <Notes>Brake Max Voltage: 0.3 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>216</Address>
+        <Value>3482</Value>
+        <Notes>Brake Start Voltage: 0.85 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>217</Address>
+        <Value>18022</Value>
+        <Notes>Assist Voltage High Reading: 4.4 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>218</Address>
+        <Value>9830</Value>
+        <Notes>Assist Voltage Low Reading: 2.4 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>219</Address>
+        <Value>2048</Value>
+        <Notes>Assist Level 1: 0.5 (scale = 40.96 * 100)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>220</Address>
+        <Value>200</Value>
+        <Notes>Torque Up Ramp: 200 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>221</Address>
+        <Value>50</Value>
+        <Notes>Torque Down Ramp: 50 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>222</Address>
+        <Value>200</Value>
+        <Notes>Pedalec Positive Motoring Torque Ramp: 200 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>223</Address>
+        <Value>50</Value>
+        <Notes>Pedalec Negative Motoring Torque Ramp: 50 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>224</Address>
+        <Value>200</Value>
+        <Notes>Regen Torque Engage Ramp: 200 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>225</Address>
+        <Value>50</Value>
+        <Notes>Regen Torque Release Ramp: 50 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>226</Address>
+        <Value>256</Value>
+        <Notes>Gear Ratio: 1 N:1 (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>227</Address>
+        <Value>610</Value>
+        <Notes>Wheel Diameter: 24 inch (scale = 25.4)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>228</Address>
+        <Value>256</Value>
+        <Notes>Assist Cut Out Distance: 1 meters (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>229</Address>
+        <Value>25344</Value>
+        <Notes>Maximum Speed: 99 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>230</Address>
+        <Value>2560</Value>
+        <Notes>Rev/Walk Speed: 10 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>231</Address>
+        <Value>0</Value>
+        <Notes>Wheel Sp. Sensor Pulses Per Rev: 0 Pulses/rev</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>232</Address>
+        <Value>100</Value>
+        <Notes>Pedalelec Minimum Timeout: 100 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>233</Address>
+        <Value>500</Value>
+        <Notes>Pedalelec Maximum Timeout: 500 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>234</Address>
+        <Value>16</Value>
+        <Notes>Pedal Speed Sensor Pulses Per Revolution: 16 Pulses/rev</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>235</Address>
+        <Value>4</Value>
+        <Notes>Pedal Sense Delay: 4 Pedal sensor pulses</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>236</Address>
+        <Value>0</Value>
+        <Notes>Vehicle Maximum Speed (Street mode): 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>239</Address>
+        <Value>2457</Value>
+        <Notes>Model Dictionary Number - Low: 2457</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>240</Address>
+        <Value>409</Value>
+        <Notes>Model Dictionary Number - High: 409</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>241</Address>
+        <Value>3198</Value>
+        <Notes>Assist Speed 1: 77.3 km/h (scale = 40.96 * 100 / p[229])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>242</Address>
+        <Value>0</Value>
+        <Notes>Torque Sensor Voltage Source: 0[Analog Input 1 (Thrt)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>243</Address>
+        <Value>1280</Value>
+        <Notes>Cruise Input Source: 1280[not defined]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>244</Address>
+        <Value>500</Value>
+        <Notes>Digital Throttle Sensor Source: 500[not defined]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>245</Address>
+        <Value>3482</Value>
+        <Notes>Assist Level 2: 0.85 (scale = 40.96 * 100)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>246</Address>
+        <Value>3604</Value>
+        <Notes>Assist Speed 2: 87.1 km/h (scale = 40.96 * 100 / p[229])</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>247</Address>
+        <Value>1</Value>
+        <Notes>Throttle Sensor Source: 1[Analog Input 2 (Brk1)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>248</Address>
+        <Value>4</Value>
+        <Notes>Cutoff Brake Sensor Source: 4[Network]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>249</Address>
+        <Value>1</Value>
+        <Notes>Regen Brake Source: 1[Analog Input 2 (Brk1)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>250</Address>
+        <Value>0</Value>
+        <Notes>Assist Gain 3: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>251</Address>
+        <Value>0</Value>
+        <Notes>Assist Speed 3: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>252</Address>
+        <Value>0</Value>
+        <Notes>Vehicle Jog Speed 2: 0 km/h (scale = 256)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>253</Address>
+        <Value>0</Value>
+        <Notes>Assist Gain Walk: 0 (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>254</Address>
+        <Value>0</Value>
+        <Notes>Speed Limit Ramp Time: 0 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>255</Address>
+        <Value>0</Value>
+        <Notes>CAN Sync Loss Timeout: 0 ms</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>256</Address>
+        <Value>5931</Value>
+        <Notes>Software Revision Level: 5.931 (scale = 1000)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>465</Address>
+        <Value>683</Value>
+        <Notes>OTP Serial Number 0: 683</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>466</Address>
+        <Value>1730</Value>
+        <Notes>OTP Serial Number 1: 1730</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>467</Address>
+        <Value>0</Value>
+        <Notes>OTP Serial Number 2: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>468</Address>
+        <Value>0</Value>
+        <Notes>OTP Serial Number 3: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>469</Address>
+        <Value>12274</Value>
+        <Notes>OTP Serial Number 4: 12274</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>470</Address>
+        <Value>0</Value>
+        <Notes>OTP Serial Number 5: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>471</Address>
+        <Value>54426</Value>
+        <Notes>OTP Serial Number 6: 54426</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>472</Address>
+        <Value>1053</Value>
+        <Notes>OTP Serial Number 7: 1053</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>473</Address>
+        <Value>0</Value>
+        <Notes>Speed Command: 0 % of rated RPM (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>474</Address>
+        <Value>4096</Value>
+        <Notes>Maximum Motoring Current: 100 % of rated motor current (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>475</Address>
+        <Value>4096</Value>
+        <Notes>Maximum Braking Current: 100 % of rated motor current (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>476</Address>
+        <Value>1</Value>
+        <Notes>State Command: 1[IDLE]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>477</Address>
+        <Value>0</Value>
+        <Notes>Torque Command: 0 % rated motor current (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>478</Address>
+        <Value>0</Value>
+        <Notes>Running Light PWM (Daylight): 0 % (scale = 2.56)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>479</Address>
+        <Value>0</Value>
+        <Notes>Brake Light PWM (Daylight): 0 % (scale = 2.56)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>480</Address>
+        <Value>0</Value>
+        <Notes>Test Mode: 0[Closed Loop Current Mode (standard operating mode)]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>481</Address>
+        <Value>0</Value>
+        <Notes>Motor Discovery Mode: 0[Off]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>482</Address>
+        <Value>0</Value>
+        <Notes>Open Loop Modulation: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>483</Address>
+        <Value>0</Value>
+        <Notes>Open Loop Current: 0 A</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>484</Address>
+        <Value>0</Value>
+        <Notes>Open Loop Frequemcy: 0 Hz (scale = 16)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>485</Address>
+        <Value>0</Value>
+        <Notes>Open Loop Angle: 0 deg (scale = 91.0222)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>486</Address>
+        <Value>0</Value>
+        <Notes>Debug Cmd1: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>487</Address>
+        <Value>0</Value>
+        <Notes>Torque Sensor Setpoint: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>489</Address>
+        <Value>0</Value>
+        <Notes>LIN Network Command: 0[None]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>490</Address>
+        <Value>0</Value>
+        <Notes>Remote Speed Command: 0 % of rated RPM (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>491</Address>
+        <Value>0</Value>
+        <Notes>Remote Maximum Motoring Current: 0 % rated motor current (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>492</Address>
+        <Value>0</Value>
+        <Notes>Remote Maximum Braking Current: 0 % rated motor current (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>493</Address>
+        <Value>0</Value>
+        <Notes>Remote State Command: 0[OFF]</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>494</Address>
+        <Value>0</Value>
+        <Notes>Remote Torque Command: 0 % (scale = 40.96)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>495</Address>
+        <Value>0</Value>
+        <Notes>Remote Throttle Voltage: 0 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>496</Address>
+        <Value>16</Value>
+        <Notes>Remote Digital Commands: 
+			0  - 0 [Cut Out]
+			1  - 0 [Head Light]
+			2  - 0 [Run Light]
+			3  - 0 [Brk Light]
+			4  - 1 [Chrg Disable]
+			5  - 0 [Alt Speed Rating]
+			6  - 0 [Alt Power Rating]
+			7  - 0 [Regen 1]
+			8  - 0 [Regen 2]
+			9  - 0 [HDQ]
+			10 - 0 [Reserved]
+			11 - 0 [Reserved]
+			12 - 0 [Reserved]
+			13 - 0 [Reserved]
+			14 - 0 [Reserved]
+			15 - 0 [Reserved]
+		</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>497</Address>
+        <Value>0</Value>
+        <Notes>Remote Analog Brake Voltage: 0 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>498</Address>
+        <Value>0</Value>
+        <Notes>Parameter Read Access Code: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>499</Address>
+        <Value>0</Value>
+        <Notes>Bidirectional Torque Command: 0 (scale = 10000)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>500</Address>
+        <Value>0</Value>
+        <Notes>Display Speed Limit Command: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>501</Address>
+        <Value>0</Value>
+        <Notes>Display Assist Level Command: 0 per unit (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>502</Address>
+        <Value>20000</Value>
+        <Notes>Display Walk Command: 20000 enum</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>503</Address>
+        <Value>0</Value>
+        <Notes>Remote Battery SOC: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>504</Address>
+        <Value>0</Value>
+        <Notes>Remote Battery Temperature: 0 C</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>505</Address>
+        <Value>0</Value>
+        <Notes>Remote Light Sensor Voltage: 0 V (scale = 4096)</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>506</Address>
+        <Value>0</Value>
+        <Notes>Remote Assist Mode: 0</Notes>
+    </SerializableParameter>
+    <SerializableParameter>
+        <Address>507</Address>
+        <Value>0</Value>
+        <Notes>Arm Datalogger: 0</Notes>
+    </SerializableParameter>
+</ArrayOfSerializableParameter>

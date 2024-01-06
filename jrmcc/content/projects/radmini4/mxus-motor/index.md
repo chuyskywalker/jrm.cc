@@ -5,7 +5,7 @@ date: 2023-07-05
 
 As part of upgrading my recently acquired RadMini4 (2019), I wanted a beefier, torquier, and faster motor.
 
-While most would jump to the [Bafang G062](https://ebikes.ca/shop/electric-bicycle-parts/motors/mg62_170.html), which is undoubtedly a great way to go, I happened across a relatively new offering from MXUS called the XF19FAT.
+While most would jump to the [Bafang G062](https://ebikes.ca/shop/electric-bicycle-parts/motors/mg62_170.html), which is undoubtedly a great way to go, I happened across a relatively new offering from MXUS called the XF19FAT. _(Edit: This motor is now called the GDR-19FAT -- just rebranded since I picked one up.)_
 
 ![The motor in wheel on a desk](<2023-07-05 14.46.11.jpg>)
 

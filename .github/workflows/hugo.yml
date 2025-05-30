@@ -68,7 +68,8 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --source ./jrmcc \
+            --source="./jrmcc" \
+            --destination="../public" \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache Save

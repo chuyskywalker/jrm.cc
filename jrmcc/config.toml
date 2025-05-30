@@ -44,4 +44,7 @@ pluralizelisttitles = false
     LinkedIn = "//linkedin.com/in/you" # TODO:
     Twitter = "//twitter.com/you" # TODO:
     #ExtraCssFiles = [ "/css/override.css" ] # relative to public directory
-    
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
